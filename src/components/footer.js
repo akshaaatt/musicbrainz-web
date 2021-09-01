@@ -68,19 +68,19 @@ class Footer extends Component {
                     <div class="w-body-a">
                       <ul class="list-unstyled">
                         <li class="item-list-a">
-                          <i class="bi bi-chevron-right"></i> <a href="https://listenbrainz.org/" target="_blank">ListenBrainz</a>
+                          <i class="bi bi-chevron-right"/> <a href="https://listenbrainz.org/" target="_blank">ListenBrainz</a>
                         </li>
                         <li class="item-list-a">
-                          <i class="bi bi-chevron-right"></i> <a href="https://critiquebrainz.org/" target="_blank">CritiqueBrainz</a>
+                          <i class="bi bi-chevron-right"/> <a href="https://critiquebrainz.org/" target="_blank">CritiqueBrainz</a>
                         </li>
                         <li class="item-list-a">
-                          <i class="bi bi-chevron-right"></i> <a href="https://picard.musicbrainz.org/" target="_blank">Picard</a>
+                          <i class="bi bi-chevron-right"/> <a href="https://picard.musicbrainz.org/" target="_blank">Picard</a>
                         </li>
                         <li class="item-list-a">
-                          <i class="bi bi-chevron-right"></i> <a href="https://bookbrainz.org/" target="_blank">BookBrainz</a>
+                          <i class="bi bi-chevron-right"/> <a href="https://bookbrainz.org/" target="_blank">BookBrainz</a>
                         </li>
                         <li class="item-list-a">
-                          <i class="bi bi-chevron-right"></i> <a href="https://acousticbrainz.org/" target="_blank">AcousticBrainz</a>
+                          <i class="bi bi-chevron-right"/> <a href="https://acousticbrainz.org/" target="_blank">AcousticBrainz</a>
                         </li>
 
                       </ul>
@@ -117,17 +117,17 @@ class Footer extends Component {
                     <ul class="list-inline">
                       <li class="list-inline-item">
                         <a href="https://www.facebook.com/MusicBrainz-12390437194/">
-                          <i class="bi bi-facebook" aria-hidden="true"></i>
+                          <i class="bi bi-facebook" aria-hidden="true"/>
                         </a>
                       </li>
                       <li class="list-inline-item">
                         <a href="https://twitter.com/MusicBrainz">
-                          <i class="bi bi-twitter" aria-hidden="true"></i>
+                          <i class="bi bi-twitter" aria-hidden="true"/>
                         </a>
                       </li>
                       <li class="list-inline-item">
                         <a href="https://www.instagram.com/metabrainz/">
-                          <i class="bi bi-instagram" aria-hidden="true"></i>
+                          <i class="bi bi-instagram" aria-hidden="true"/>
                         </a>
                       </li>
 
@@ -136,10 +136,8 @@ class Footer extends Component {
                   <div class="copyright-footer">
                     <p class="copyright color-text-a">
                       Brought to you by <span class="color-a"> MetaBrainz Foundation </span>
-
                     </p>
                   </div>
-
                 </div>
               </div>
             </div>
