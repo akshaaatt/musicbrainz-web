@@ -10,7 +10,7 @@ class Header extends Component {
                 <span/>
                 <span/>
               </button>
-              <a class="navbar-brand text-brand" href="#"><span class="color-purple">Music</span><span class="color-b">Brainz</span></a>
+              <a class="navbar-brand text-brand" href="#"><span className="color-purple">Music</span><span class="color-b">Brainz</span></a>
 
               <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
                 <ul class="navbar-nav">
