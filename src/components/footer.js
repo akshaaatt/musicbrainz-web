@@ -4,58 +4,58 @@ class Footer extends Component {
     render() {
         return (
         <React.Fragment>
-		  <section class="section-footer">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-12 col-md-4">
-                  <div class="widget-a">
+		  <section className="section-footer">
+            <div className="container">
+              <div className="row">
+                <div className="col-sm-12 col-md-4">
+                  <div className="widget-a">
                     <div className="w-header-a">
                       <h3 className="navbar-brand text-brand"><span className="color-purple">Music</span><span
                           className="color-b">Brainz</span></h3>
                     </div>
                     <br/>
-                    <div class="w-body-a">
-                      <p class="w-text-a color-text-a">
+                    <div className="w-body-a">
+                      <p className="w-text-a color-text-a">
 
                         is an open music encyclopedia that collects music metadata and makes it available to the public.
 
                       </p>
                     </div>
-                    <div class="w-footer-a">
-                      <ul class="list-unstyled">
-                        <li class="color-a">
-                          <span class="color-text-a">IRC .</span> #metabrainz , #musicbrainz
+                    <div className="w-footer-a">
+                      <ul className="list-unstyled">
+                        <li className="color-a">
+                          <span className="color-text-a">IRC .</span> #metabrainz , #musicbrainz
                         </li>
-                        <li class="color-a">
-                          <span class="color-text-a">Email .</span> support@metabrainz.org
+                        <li className="color-a">
+                          <span className="color-text-a">Email .</span> support@metabrainz.org
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <br/>
-                <div class="col-sm-12 col-md-4 section-md-t3">
-                  <div class="widget-a">
-                    <div class="w-header-a">
-                      <h3 class="w-title-a text-brand">Useful Links</h3>
+                <div className="col-sm-12 col-md-4 section-md-t3">
+                  <div className="widget-a">
+                    <div className="w-header-a">
+                      <h3 className="w-title-a text-brand">Useful Links</h3>
                     </div>
-                    <div class="w-body-a">
-                      <div class="w-body-a">
-                        <ul class="list-unstyled">
-                          <li class="item-list-a">
-                            <i class="bi bi-chevron-right"/> <a href="https://metabrainz.org/donate" target="_blank">Donate</a>
+                    <div className="w-body-a">
+                      <div className="w-body-a">
+                        <ul className="list-unstyled">
+                          <li className="item-list-a">
+                            <i className="bi bi-chevron-right"/> <a href="https://metabrainz.org/donate" target="_blank">Donate</a>
                           </li>
-                          <li class="item-list-a">
-                            <i class="bi bi-chevron-right"/> <a href="https://wiki.musicbrainz.org/Main_Page" target="_blank">Wiki</a>
+                          <li className="item-list-a">
+                            <i className="bi bi-chevron-right"/> <a href="https://wiki.musicbrainz.org/Main_Page" target="_blank">Wiki</a>
                           </li>
-                          <li class="item-list-a">
-                            <i class="bi bi-chevron-right"/> <a href="https://community.metabrainz.org/" target="_blank">Community</a>
+                          <li className="item-list-a">
+                            <i className="bi bi-chevron-right"/> <a href="https://community.metabrainz.org/" target="_blank">Community</a>
                           </li>
-                          <li class="item-list-a">
-                            <i class="bi bi-chevron-right"/> <a href="https://blog.metabrainz.org/" target="_blank">Blog</a>
+                          <li className="item-list-a">
+                            <i className="bi bi-chevron-right"/> <a href="https://blog.metabrainz.org/" target="_blank">Blog</a>
                           </li>
-                          <li class="item-list-a">
-                            <i class="bi bi-chevron-right"/> <a href="https://metabrainz.org/" target="_blank">MetaBrainz</a>
+                          <li className="item-list-a">
+                            <i className="bi bi-chevron-right"/> <a href="https://metabrainz.org/" target="_blank">MetaBrainz</a>
                           </li>
 
                         </ul>
@@ -63,27 +63,27 @@ class Footer extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-12 col-md-4 section-md-t3">
-                  <div class="widget-a">
-                    <div class="w-header-a">
-                      <h3 class="w-title-a text-brand">Explore Us</h3>
+                <div className="col-sm-12 col-md-4 section-md-t3">
+                  <div className="widget-a">
+                    <div className="w-header-a">
+                      <h3 className="w-title-a text-brand">Explore Us</h3>
                     </div>
-                    <div class="w-body-a">
-                      <ul class="list-unstyled">
-                        <li class="item-list-a">
-                          <i class="bi bi-chevron-right"/> <a href="https://listenbrainz.org/" target="_blank">ListenBrainz</a>
+                    <div className="w-body-a">
+                      <ul className="list-unstyled">
+                        <li className="item-list-a">
+                          <i className="bi bi-chevron-right"/> <a href="https://listenbrainz.org/" target="_blank">ListenBrainz</a>
                         </li>
-                        <li class="item-list-a">
-                          <i class="bi bi-chevron-right"/> <a href="https://critiquebrainz.org/" target="_blank">CritiqueBrainz</a>
+                        <li className="item-list-a">
+                          <i className="bi bi-chevron-right"/> <a href="https://critiquebrainz.org/" target="_blank">CritiqueBrainz</a>
                         </li>
-                        <li class="item-list-a">
-                          <i class="bi bi-chevron-right"/> <a href="https://picard.musicbrainz.org/" target="_blank">Picard</a>
+                        <li className="item-list-a">
+                          <i className="bi bi-chevron-right"/> <a href="https://picard.musicbrainz.org/" target="_blank">Picard</a>
                         </li>
-                        <li class="item-list-a">
-                          <i class="bi bi-chevron-right"/> <a href="https://bookbrainz.org/" target="_blank">BookBrainz</a>
+                        <li className="item-list-a">
+                          <i className="bi bi-chevron-right"/> <a href="https://bookbrainz.org/" target="_blank">BookBrainz</a>
                         </li>
-                        <li class="item-list-a">
-                          <i class="bi bi-chevron-right"/> <a href="https://acousticbrainz.org/" target="_blank">AcousticBrainz</a>
+                        <li className="item-list-a">
+                          <i className="bi bi-chevron-right"/> <a href="https://acousticbrainz.org/" target="_blank">AcousticBrainz</a>
                         </li>
 
                       </ul>
@@ -94,12 +94,12 @@ class Footer extends Component {
             </div>
           </section>
           <footer>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="copyright-footer">
-                    <p class="copyright color-text-a">
-                      Brought to you by <span class="color-a"> MetaBrainz Foundation </span>
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="copyright-footer">
+                    <p className="copyright color-text-a">
+                      Brought to you by <span className="color-a"> MetaBrainz Foundation </span>
                     </p>
                   </div>
                 </div>
