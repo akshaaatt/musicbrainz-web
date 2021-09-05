@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Main extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <div className="intro intro-carousel swiper-container position-relative">
                     <div className="swiper-wrapper">
                         <div className="swiper-slide carousel-item-a intro-item bg-image"
@@ -121,9 +121,9 @@ class Main extends Component {
                         <div className="testimonial-carousel-pagination carousel-pagination"/>
                     </div>
                 </section>
-
-            </React.Fragment>
+            </>
         )
     }
 }
+
 export default Main;

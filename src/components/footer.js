@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Footer extends Component {
     render() {
         return (
-        <React.Fragment>
+        <>
 		  <section className="section-footer">
             <div className="container">
               <div className="row">
@@ -106,7 +106,7 @@ class Footer extends Component {
               </div>
             </div>
           </footer>
-          </React.Fragment>
+          </>
 )
     }
 }
