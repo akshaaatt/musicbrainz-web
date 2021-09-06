@@ -24,7 +24,10 @@ class Footer extends Component {
                     <div className="w-footer-a">
                       <ul className="list-unstyled">
                         <li className="color-a">
-                          <span className="color-text-a">IRC .</span> #metabrainz , #musicbrainz
+                          <span className="color-text-a">Development IRC: </span> #metabrainz
+                        </li>
+                        <li className="color-a">
+                          <span className="color-text-a">Discussion IRC: </span> #musicbrainz
                         </li>
                         <li className="color-a">
                           <span className="color-text-a">Email .</span> support@metabrainz.org

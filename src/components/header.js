@@ -110,13 +110,9 @@ class Header extends Component {
               </ul>
             </div>
 
-            <form className="d-flex">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button type="button" onClick={attach} className="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
-                  <i className="bi bi-search"/>
-                </button>
-
-            </form>
+            <button type="button" onClick={attach} className="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
+              <i className="bi bi-search"/>
+            </button>
 
           </div>
         </nav>

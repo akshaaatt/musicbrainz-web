@@ -7,7 +7,7 @@ class Main extends Component {
                 <div className="intro intro-carousel swiper-container position-relative">
                     <div className="swiper-wrapper">
                         <div className="swiper-slide carousel-item-a intro-item bg-image"
-                             style={{ backgroundImage: `url(../../assets/img/slide-1.jpg)`  }}>
+                             style={{ backgroundImage: `url(../../assets/img/meb.jpg.webp)`  }}>
                             <div className="overlay overlay-a"/>
                             <div className="intro-content display-table">
                                 <div className="table-cell">
@@ -15,15 +15,12 @@ class Main extends Component {
                                         <div className="row">
                                             <div className="col-lg-8">
                                                 <div className="intro-body">
-                                                    <p className="intro-title-top">Recently Added
+                                                    <p className="intro-title-top">Barcelona
 
                                                     </p>
                                                     <h1 className="intro-title mb-4">
-                                                        Curled Up Remixes
+                                                        Summit 2017
                                                     </h1>
-                                                    <p className="intro-subtitle intro-price">
-                                                        <a href="#"><span className="price-a">Checkout</span></a>
-                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -32,7 +29,7 @@ class Main extends Component {
                             </div>
                         </div>
                         <div className="swiper-slide carousel-item-a intro-item bg-image"
-                             style={{ backgroundImage: `url(../../assets/img/slide-2.jpg)`  }}>
+                             style={{ backgroundImage: `url(../../assets/img/session.jpg.webp)`  }}>
                             <div className="overlay overlay-a"/>
                             <div className="intro-content display-table">
                                 <div className="table-cell">
@@ -121,9 +118,35 @@ class Main extends Component {
                         <div className="testimonial-carousel-pagination carousel-pagination"/>
                     </div>
                 </section>
+
+                <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"/></a>
+
             </>
         )
     }
+}
+const select = (el, all = false) => {
+    el = el.trim()
+    if (all) {
+        return [...document.querySelectorAll(el)]
+    } else {
+        return document.querySelector(el)
+    }
+}
+const onscroll = (el, listener) => {
+    el.addEventListener('scroll', listener)
+}
+let backtotop = select('.back-to-top')
+if (backtotop) {
+    const toggleBacktotop = () => {
+        if (window.scrollY > 100) {
+            backtotop.classList.add('active')
+        } else {
+            backtotop.classList.remove('active')
+        }
+    }
+    window.addEventListener('load', toggleBacktotop)
+    onscroll(document, toggleBacktotop)
 }
 
 export default Main;
