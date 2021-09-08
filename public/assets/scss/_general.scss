@@ -571,7 +571,8 @@ a {
   &.btn-b-n {
     background-color: $color-b;
     color: $color-w;
-    border-radius: 0;
+    border-radius: 8px;
+    margin-left: 4px;
 
     &:hover {
       background-color: $color-b-dark;

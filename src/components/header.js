@@ -75,6 +75,7 @@ class Header extends Component {
             <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span/>
             <span/>
+              <span/>
             </button>
             <a className="navbar-brand text-brand" href="#"><span className="color-purple">Music</span><span className="color-b">Brainz</span></a>
 
@@ -110,9 +111,36 @@ class Header extends Component {
               </ul>
             </div>
 
-            <button type="button" onClick={attach} className="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
-              <i className="bi bi-search"/>
-            </button>
+            <form className="d-flex">
+              <div className="form-group">
+                <input type="text" name="query" className="form-control" placeholder="Search"/>
+              </div>
+              <div className="form-group">
+                <select id="type-selector" name="type" className="form-control input-group-sm">
+                  <option>Artist</option>
+                  <option>Release</option>
+                  <option>Recording</option>
+                  <option>Label</option>
+                  <option>Work</option>
+                  <option>Release Group</option>
+                  <option>Area</option>
+                  <option>Place</option>
+                  <option>Annotation</option>
+                  <option>CD Stud</option>
+                  <option>Editor</option>
+                  <option>Tag</option>
+                  <option>Instrument</option>
+                  <option>Series</option>
+                  <option>Event</option>
+                  <option>Documentation</option>
+
+                </select>
+              </div>
+
+              <button type="button" onClick={attach} className="btn btn-b-n">
+                  <i className="bi bi-search"/>
+                </button>
+            </form>
 
           </div>
         </nav>
