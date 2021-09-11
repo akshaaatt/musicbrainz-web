@@ -579,7 +579,7 @@ a:hover {
   background-color: #eb743b;
   color: #ffffff;
   border-radius: 8px;
-  margin-left: 6px;
+  margin-left: 4px;
 }
 
 .btn.btn-b-n:hover {
@@ -605,8 +605,8 @@ a:hover {
 .navbar-default {
   transition: all .5s ease-in-out;
   background-color: #ffffff;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
@@ -700,8 +700,8 @@ a:hover {
 
 .navbar-default.navbar-reduce {
   transition: all .5s ease-in-out;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 19px;
+  padding-bottom: 19px;
 }
 
 .navbar-default.navbar-reduce .nav-link {
@@ -1368,7 +1368,7 @@ a:hover {
 footer {
   background: #f3f3f3;
   text-align: center;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 footer .copyright-footer {

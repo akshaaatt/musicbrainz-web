@@ -2,12 +2,26 @@ import React, { Component } from 'react';
 
 class Main extends Component {
     render() {
+        const slider = {
+            speed: 600,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            }
+        };
         return (
             <>
-                <div className="intro intro-carousel swiper-container position-relative">
+                <div className="intro slider swiper-container position-relative" >
                     <div className="swiper-wrapper">
                         <div className="swiper-slide carousel-item-a intro-item bg-image"
-                             style={{ backgroundImage: `url(../../assets/img/meb.jpg.webp)`  }}>
+                             style={{ backgroundImage: `url(../../assets/img/slide-1.jpg)`  }}>
                             <div className="overlay overlay-a"/>
                             <div className="intro-content display-table">
                                 <div className="table-cell">
@@ -121,6 +135,84 @@ class Main extends Component {
 
                 <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"/></a>
 
+
+                <div id="carouselExampleCaptions" className="carousel slide" data-mdb-ride="carousel">
+                    <div className="carousel-indicators">
+                        <button
+                            type="button"
+                            data-mdb-target="#carouselExampleCaptions"
+                            data-mdb-slide-to="0"
+                            className="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                        />
+                        <button
+                            type="button"
+                            data-mdb-target="#carouselExampleCaptions"
+                            data-mdb-slide-to="1"
+                            aria-label="Slide 2"
+                        />
+                        <button
+                            type="button"
+                            data-mdb-target="#carouselExampleCaptions"
+                            data-mdb-slide-to="2"
+                            aria-label="Slide 3"
+                        />
+                    </div>
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <img
+                                src="https://mdbootstrap.com/img/new/slides/041.jpg"
+                                className="d-block w-100"
+                                alt="..."
+                            />
+                            <div className="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <img
+                                src="https://mdbootstrap.com/img/new/slides/042.jpg"
+                                className="d-block w-100"
+                                alt="..."
+                            />
+                            <div className="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <img
+                                src="https://mdbootstrap.com/img/new/slides/043.jpg"
+                                className="d-block w-100"
+                                alt="..."
+                            />
+                            <div className="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        className="carousel-control-prev"
+                        type="button"
+                        data-mdb-target="#carouselExampleCaptions"
+                        data-mdb-slide="prev"
+                    >
+                        <span className="carousel-control-prev-icon" aria-hidden="true"/>
+                        <span className="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        className="carousel-control-next"
+                        type="button"
+                        data-mdb-target="#carouselExampleCaptions"
+                        data-mdb-slide="next"
+                    >
+                        <span className="carousel-control-next-icon" aria-hidden="true"/>
+                        <span className="visually-hidden">Next</span>
+                    </button>
+                </div>
             </>
         )
     }

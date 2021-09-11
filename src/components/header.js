@@ -72,7 +72,7 @@ class Header extends Component {
 
         <nav className="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
           <div className="container">
-            <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <button className="navbar-toggler collapsed col-2 d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span/>
             <span/>
               <span/>
@@ -115,8 +115,9 @@ class Header extends Component {
               <div className="form-group">
                 <input type="text" name="query" className="form-control" placeholder="Search"/>
               </div>
+
               <div className="form-group">
-                <select id="type-selector" name="type" className="form-control input-group-sm">
+                <select id="type-selector" name="type" className="form-control">
                   <option>Artist</option>
                   <option>Release</option>
                   <option>Recording</option>
@@ -136,7 +137,6 @@ class Header extends Component {
 
                 </select>
               </div>
-
               <button type="button" onClick={attach} className="btn btn-b-n">
                   <i className="bi bi-search"/>
                 </button>
