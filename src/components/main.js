@@ -29,11 +29,11 @@ class Main extends Component {
                                         <div className="row">
                                             <div className="col-lg-8">
                                                 <div className="intro-body">
-                                                    <p className="intro-title-top">Barcelona
-
+                                                    <p className="intro-title-top">
+                                                        Recent Additions
                                                     </p>
                                                     <h1 className="intro-title mb-4">
-                                                        Summit 2017
+                                                        Curled Up Remixes
                                                     </h1>
                                                 </div>
                                             </div>

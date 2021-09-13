@@ -12,7 +12,7 @@ class Footer extends Component {
                 <div className="col-md-3 d-none d-md-block">
                   <div className="copyright-footer">
                     <p className="copyright color-text-a">
-                     Open Source Enthusiast?  <a href="https://github.com/metabrainz/musicbrainz-server" target="_blank"> <span className="color-a"> Contribute Here </span> </a>
+                     Open Source Geek?  <a href="https://github.com/metabrainz/musicbrainz-server" target="_blank"> <span className="color-a"> Contribute Here </span> </a>
                     </p>
                   </div>
                 </div>
@@ -25,7 +25,7 @@ class Footer extends Component {
                 </div>
                 <div className="col-md-3 d-none d-md-block">
                   <div className="copyright-footer">
-                    <p className="copyright color-a">
+                    <p className="copyright color-text-a">
                       Found an Issue?  <a href="https://tickets.metabrainz.org/" target="_blank"> <span className="color-a"> Report Here </span></a>
                     </p>
                   </div>
