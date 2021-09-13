@@ -16,14 +16,12 @@
       color: $color-b;
     }
   }
-
-  .widget-a {
-    .w-title-a {
-      margin-bottom: 1rem;
-    }
-  }
 }
-
+.flicker-img>a {
+  float: left;
+  padding: 1px;
+  width: 33.33%;
+}
 footer {
   background: #f3f3f3;
   text-align: center;

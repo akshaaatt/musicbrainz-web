@@ -25,22 +25,23 @@ class home extends Component {
 
                     <div className="clients-slider swiper-container">
                         <div className="swiper-wrapper align-items-center">
-                            <div className="swiper-slide"><img src="../../public/assets/img/Spotify_logo_with_text.svg"
+                            <div className="swiper-slide"><img src="../assets/img/Spotify_logo_with_text.svg"
                                                                className="img-fluid" alt=""/></div>
-                            <div className="swiper-slide"><img src="assets/img/clients/client-2.png"
+                            <div className="swiper-slide"><img src="../assets/img/Spotify_logo_with_text.svg"
                                                                className="img-fluid" alt=""/></div>
-                            <div className="swiper-slide"><img src="assets/img/clients/client-3.png"
+                            <div className="swiper-slide"><img src="../assets/img/Spotify_logo_with_text.svg"
                                                                className="img-fluid" alt=""/></div>
-                            <div className="swiper-slide"><img src="assets/img/clients/client-4.png"
+                            <div className="swiper-slide"><img src="../assets/img/Spotify_logo_with_text.svg"
                                                                className="img-fluid" alt=""/></div>
-                            <div className="swiper-slide"><img src="assets/img/clients/client-5.png"
+                            <div className="swiper-slide"><img src="../assets/img/Spotify_logo_with_text.svg"
                                                                className="img-fluid" alt=""/></div>
-                            <div className="swiper-slide"><img src="assets/img/clients/client-6.png"
+                            <div className="swiper-slide"><img src="../assets/img/Spotify_logo_with_text.svg"
                                                                className="img-fluid" alt=""/></div>
-                            <div className="swiper-slide"><img src="assets/img/clients/client-7.png"
+                            <div className="swiper-slide"><img src="../assets/img/Spotify_logo_with_text.svg"
                                                                className="img-fluid" alt=""/></div>
-                            <div className="swiper-slide"><img src="assets/img/clients/client-8.png"
+                            <div className="swiper-slide"><img src="../assets/img/Spotify_logo_with_text.svg"
                                                                className="img-fluid" alt=""/></div>
+
                         </div>
                         <div className="swiper-pagination"/>
                     </div>

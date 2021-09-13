@@ -11,7 +11,11 @@ h5,
 h6 {
   color: #000000;
 }
-
+.flicker-img > a {
+  float: left;
+  padding: 1px;
+  width: 33.33%;
+}
 a {
   color: #000000;
   text-decoration: none;
@@ -57,7 +61,6 @@ a:hover {
 .link-a {
   text-decoration: none;
   color: #ffffff;
-  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -291,6 +294,11 @@ a:hover {
   .section-md-t3 {
     padding-top: 3rem;
   }
+}
+.flicker-img > a {
+  float: left;
+  padding: 1px;
+  width: 33.33%;
 }
 
 .section-b2 {
@@ -579,7 +587,7 @@ a:hover {
   background-color: #eb743b;
   color: #ffffff;
   border-radius: 8px;
-  margin-left: 4px;
+  margin-left: 6px;
 }
 
 .btn.btn-b-n:hover {
