@@ -2,20 +2,6 @@ import React, { Component } from 'react';
 
 class Main extends Component {
     render() {
-        const slider = {
-            speed: 600,
-            loop: true,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false
-            },
-            slidesPerView: 'auto',
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true
-            }
-        };
         return (
             <>
                 <div className="intro slider swiper-container position-relative" >

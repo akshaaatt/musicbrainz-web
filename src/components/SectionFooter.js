@@ -21,13 +21,13 @@ class SectionFooter extends Component {
                                 <div className="w-footer-a">
                                     <ul className="list-unstyled">
                                         <li className="color-a">
-                                            <a href="https://kiwiirc.com/nextclient/irc.libera.chat/?#metabrainz" target="_blank"> <span className="color-text-a">Development IRC: </span> #metabrainz</a>
+                                            <span className="color-text-a">Development IRC: </span> <a href="https://kiwiirc.com/nextclient/irc.libera.chat/?#metabrainz" target="_blank"> #metabrainz</a>
                                         </li>
                                         <li className="color-a">
-                                            <a href="https://kiwiirc.com/nextclient/irc.libera.chat/?#metabrainz" target="_blank"> <span className="color-text-a">Discussion IRC: </span> #musicbrainz</a>
+                                            <span className="color-text-a">Discussion IRC: </span> <a href="https://kiwiirc.com/nextclient/irc.libera.chat/?#metabrainz" target="_blank"> #musicbrainz</a>
                                         </li>
                                         <li className="color-a" >
-                                           <a href="mailto:support@metabrainz.org"><span className="color-text-a">Email: </span> support@metabrainz.org </a>
+                                            <span className="color-text-a">Email: </span> <a href="mailto:support@metabrainz.org">support@metabrainz.org </a>
                                         </li>
                                     </ul>
                                 </div>
