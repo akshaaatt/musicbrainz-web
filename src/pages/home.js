@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Header from '../components/header';
+import Header from '../components/Header';
 import Main from '../components/main';
 import Footer from '../components/footer';
 import Sponsors from "../components/Sponsors";
@@ -79,6 +79,7 @@ class home extends Component {
 
         return (
             <>
+
                 <Header />
                 {/*<Main/>*/}
 

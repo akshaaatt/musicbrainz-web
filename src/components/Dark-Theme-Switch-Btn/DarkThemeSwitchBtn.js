@@ -1,7 +1,7 @@
 import React from "react";
 import "./DarkThemeSwitchBtn.css";
 
-function DarkThemeSwitchBtn(props) {
+const DarkThemeSwitchBtn = props => {
   let active;
   let buttonClassName;
 
@@ -28,7 +28,7 @@ function DarkThemeSwitchBtn(props) {
         <img src={activeNightIcon} alt="icon for dark theme" />
       </picture>
     </div>
-  );
+  )
 }
 
 export default DarkThemeSwitchBtn;

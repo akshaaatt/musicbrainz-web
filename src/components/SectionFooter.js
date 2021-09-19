@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 
-class SectionFooter extends Component {
-    render(){
+const SectionFooter = props => {
         return(
             <section className="section-footer">
                 <div className="container">
@@ -131,7 +130,6 @@ class SectionFooter extends Component {
                 </div>
             </section>
         )
-    }
 }
 
 export default SectionFooter;

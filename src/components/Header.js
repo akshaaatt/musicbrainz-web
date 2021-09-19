@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
 import SearchOverlay from "./SearchOverlay";
 
-class Header extends Component {
-
-  render() {
-    const attach = e => {
-      e.preventDefault()
-      document.body.classList.add('box-collapse-open')
-      document.body.classList.remove('box-collapse-closed')
-    }
+const Header = props => {
     return (
         <>
           <SearchOverlay/>
@@ -86,7 +79,12 @@ class Header extends Component {
           </nav>
         </>
     )
-  }
+
+}
+const attach = e => {
+  e.preventDefault()
+  document.body.classList.add('box-collapse-open')
+  document.body.classList.remove('box-collapse-closed')
 }
 
 export default Header;
