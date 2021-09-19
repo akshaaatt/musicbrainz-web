@@ -4,7 +4,22 @@ import Footer from '../components/Footer/Footer';
 import Sponsors from "../components/Sponsors/Sponsors";
 
 const home = props => {
-        const select = (el, all = false) => {
+        return (
+            <>
+                <Header />
+                {/*<Main/>*/}
+
+                {/*<Sponsors/>*/}
+                <Footer/>
+
+                {/*<a href="#" className="{backtotop} d-flex align-items-center justify-content-center">*/}
+                {/*    <i className="bi bi-arrow-up-short"/>*/}
+                {/*</a>*/}
+
+            </>
+        )
+}
+  const select = (el, all = false) => {
             el = el.trim()
             if (all) {
                 return [...document.querySelectorAll(el)]
@@ -72,22 +87,4 @@ const home = props => {
             body.classList.remove('box-collapse-open')
             body.classList.add('box-collapse-closed')
         })
-
-
-        return (
-            <>
-
-                <Header />
-                {/*<Main/>*/}
-
-                {/*<Sponsors/>*/}
-                <Footer/>
-
-                {/*<a href="#" className="{backtotop} d-flex align-items-center justify-content-center">*/}
-                {/*    <i className="bi bi-arrow-up-short"/>*/}
-                {/*</a>*/}
-
-            </>
-        )
-}
 export default home;
