@@ -1,7 +1,4 @@
-import React, { Component } from 'react';
-
-class Footer extends Component {
-    render() {
+const RecentAdditions = props => {
         return (
         <>
           <section className="section-news section-t8">
@@ -128,6 +125,5 @@ class Footer extends Component {
           </section>
           </>
 )
-    }
 }
 export default Footer;

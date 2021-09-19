@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
-
-import Header from '../components/Header';
+import Header from '../components/Header/Header';
 import Main from '../components/main';
-import Footer from '../components/footer';
-import Sponsors from "../components/Sponsors";
+import Footer from '../components/Footer/Footer';
+import Sponsors from "../components/Sponsors/Sponsors";
 
-class home extends Component {
-    render() {
+const home = props => {
         const select = (el, all = false) => {
             el = el.trim()
             if (all) {
@@ -92,6 +89,5 @@ class home extends Component {
 
             </>
         )
-    }
 }
 export default home;

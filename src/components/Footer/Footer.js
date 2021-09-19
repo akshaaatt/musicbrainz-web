@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
 import SectionFooter from "./SectionFooter";
 
-class Footer extends Component {
-    render() {
+const Footer = props => {
         return (
         <>
 		 <SectionFooter/>
@@ -35,6 +33,6 @@ class Footer extends Component {
           </footer>
           </>
 )
-    }
+
 }
 export default Footer;

@@ -1,12 +1,10 @@
-import React, {Component} from 'react';
+const remove = e => {
+    e.preventDefault()
+    document.body.classList.remove('box-collapse-open')
+    document.body.classList.add('box-collapse-closed')
+}
 
-class SearchOverlay extends Component{
-    render(){
-        const remove = e => {
-            e.preventDefault()
-            document.body.classList.remove('box-collapse-open')
-            document.body.classList.add('box-collapse-closed')
-        }
+const SearchOverlay = props => {
         return(
             <div className="box-collapse">
                 <div className="title-box-d">
@@ -73,7 +71,6 @@ class SearchOverlay extends Component{
                 </div>
             </div>
         )
-    }
 }
 
 export default SearchOverlay;
