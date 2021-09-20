@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SearchOverlay from "./SearchOverlay";
-import  "Header.css";
+import  "./Header.css";
 
 const Header = props => {
     return (

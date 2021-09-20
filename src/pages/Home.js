@@ -2,6 +2,7 @@ import Header from '../components/Header/Header';
 import Main from '../components/main';
 import Footer from '../components/Footer/Footer';
 import Sponsors from "../components/Sponsors/Sponsors";
+import Intro from "../components/Intro/Intro";
 
 const home = props => {
         return (
@@ -10,6 +11,7 @@ const home = props => {
                 {/*<Main/>*/}
 
                 {/*<Sponsors/>*/}
+                <Intro/>
                 <Footer/>
 
                 {/*<a href="#" className="{backtotop} d-flex align-items-center justify-content-center">*/}
