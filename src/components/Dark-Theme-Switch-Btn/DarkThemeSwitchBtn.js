@@ -1,7 +1,7 @@
 import React from "react";
 import "./DarkThemeSwitchBtn.css";
 
-const DarkThemeSwitchBtn = props => {
+export const DarkThemeSwitchBtn = props => {
   let active;
   let buttonClassName;
 
@@ -30,5 +30,3 @@ const DarkThemeSwitchBtn = props => {
     </div>
   )
 }
-
-export default DarkThemeSwitchBtn;
