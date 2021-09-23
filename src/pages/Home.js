@@ -3,6 +3,7 @@ import Main from '../components/main';
 import Footer from '../components/Footer/Footer';
 import Sponsors from "../components/Sponsors/Sponsors";
 import Intro from "../components/Intro/Intro";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
 const home = props => {
         return (
@@ -14,10 +15,13 @@ const home = props => {
                 <Intro/>
                 <Footer/>
 
-                {/*<a href="#" className="{backtotop} d-flex align-items-center justify-content-center">*/}
-                {/*    <i className="bi bi-arrow-up-short"/>*/}
-                {/*</a>*/}
-
+                   <ScrollToTop
+                       icon="fas fa-arrow-up"
+                       backgroundColor = "#EB743B"
+                       position={{ bottom: "5%", right: "0%" }}
+                       hover={{ backgroundColor: "purple", opacity: "0.95" }}
+                       margin="24px"
+                     />
             </>
         )
 }
@@ -58,35 +62,4 @@ const home = props => {
             })
         }
 
-        let backtotop = select('.back-to-top')
-        if (backtotop) {
-            const toggleBacktotop = () => {
-                if (window.scrollY > 100) {
-                    backtotop.classList.add('active')
-                } else {
-                    backtotop.classList.remove('active')
-                }
-            }
-            window.addEventListener('load', toggleBacktotop)
-            onscroll(document, toggleBacktotop)
-        }
-
-        let preloader = select('#preloader');
-        if (preloader) {
-            window.addEventListener('load', () => {
-                preloader.remove()
-            });
-        }
-        let body = select('body');
-        on('click', '.navbar-toggle-box', function(e) {
-            e.preventDefault()
-            body.classList.add('box-collapse-open')
-            body.classList.remove('box-collapse-closed')
-        })
-
-        on('click', '.close-box-collapse', function(e) {
-            e.preventDefault()
-            body.classList.remove('box-collapse-open')
-            body.classList.add('box-collapse-closed')
-        })
 export default home;

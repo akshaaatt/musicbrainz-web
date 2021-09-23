@@ -19,17 +19,17 @@ const select = (el, all = false) => {
 const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
 }
-let backtotop = select('.back-to-top')
-if (backtotop) {
-    const toggleBacktotop = () => {
+let ScrollToTop = select('.back-to-top')
+if (ScrollToTop) {
+    const toggleScrollToTop = () => {
         if (window.scrollY > 100) {
-            backtotop.classList.add('active')
+            ScrollToTop.classList.add('active')
         } else {
-            backtotop.classList.remove('active')
+            ScrollToTop.classList.remove('active')
         }
     }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
+    window.addEventListener('load', toggleScrollToTop)
+    onscroll(document, toggleScrollToTop)
 }
 
 export default Main;
