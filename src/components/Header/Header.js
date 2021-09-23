@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import SearchOverlay from "./SearchOverlay";
 import  "./Header.css";
 

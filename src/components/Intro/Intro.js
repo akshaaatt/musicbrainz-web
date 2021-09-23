@@ -1,60 +1,59 @@
 const Intro = props => {
     return(
-
-        <section class="section-property section-t8">
-           <div class="container">
-             <div class="row">
-               <div class="col-md-12">
-                 <div class="title-wrap d-flex justify-content-between">
-                   <div class="title-box">
-                     <h2 class="title-a">Backed By</h2>
+        <section className="section-property section-t8">
+           <div className="container">
+             <div className="row">
+               <div className="col-md-12">
+                 <div className="title-wrap d-flex justify-content-between">
+                   <div className="title-box">
+                     <h2 className="title-a">Backed By</h2>
                    </div>
-                   <div class="title-link">
+                   <div className="title-link">
                      <a href="/">All Users
-                       <span class="bi bi-chevron-right"></span>
+                       <span className="bi bi-chevron-right"/>
                      </a>
                    </div>
                  </div>
                </div>
              </div>
 
-             <div id="property-carousel" class="swiper-container">
-               <div class="swiper-wrapper">
+             <div id="property-carousel" className="swiper-container">
+               <div className="swiper-wrapper">
 
-                 <div class="carousel-item-b swiper-slide">
-                   <div class="card-box-a">
-                     <div class="img-box-a">
-                       <img src="assets/img/Google.jpg" alt="" class="img-a img-fluid"/>
+                 <div className="carousel-item-b swiper-slide">
+                   <div className="card-box-a">
+                     <div className="img-box-a">
+                       <img src="assets/img/Google.jpg" alt="" className="img-a img-fluid"/>
                      </div>
                    </div>
                  </div>
 
-                 <div class="carousel-item-b swiper-slide">
-                   <div class="card-box-a">
-                     <div class="img-box-a">
-                       <img src="assets/img/Google.jpg" alt="" class="img-a img-fluid"/>
+                 <div className="carousel-item-b swiper-slide">
+                   <div className="card-box-a">
+                     <div className="img-box-a">
+                       <img src="assets/img/Google.jpg" alt="" className="img-a img-fluid"/>
                      </div>
                    </div>
                  </div>
 
-                 <div class="carousel-item-b swiper-slide">
-                   <div class="card-box-a">
-                     <div class="img-box-a">
-                       <img src="assets/img/Google.jpg" alt="" class="img-a img-fluid"/>
+                 <div className="carousel-item-b swiper-slide">
+                   <div className="card-box-a">
+                     <div className="img-box-a">
+                       <img src="assets/img/Google.jpg" alt="" className="img-a img-fluid"/>
                      </div>
                    </div>
                  </div>
 
-                 <div class="carousel-item-b swiper-slide">
-                   <div class="card-box-a">
-                     <div class="img-box-a">
-                       <img src="assets/img/Google.jpg" alt="" class="img-a img-fluid"/>
+                 <div className="carousel-item-b swiper-slide">
+                   <div className="card-box-a">
+                     <div className="img-box-a">
+                       <img src="assets/img/Google.jpg" alt="" className="img-a img-fluid"/>
                      </div>
                    </div>
                  </div>
                </div>
              </div>
-             <div class="propery-carousel-pagination carousel-pagination"></div>
+             <div className="propery-carousel-pagination carousel-pagination"/>
 
            </div>
          </section>

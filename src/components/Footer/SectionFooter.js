@@ -1,5 +1,3 @@
-import React, {Component} from 'react';
-
 const SectionFooter = props => {
         return(
             <section className="section-footer">
