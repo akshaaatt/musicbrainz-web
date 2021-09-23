@@ -1,9 +1,3 @@
-const remove = e => {
-    e.preventDefault()
-    document.body.classList.remove('box-collapse-open')
-    document.body.classList.add('box-collapse-closed')
-}
-
 const SearchOverlay = props => {
         return(
             <div className="box-collapse">
@@ -71,6 +65,12 @@ const SearchOverlay = props => {
                 </div>
             </div>
         )
+}
+
+const remove = e => {
+    e.preventDefault()
+    document.body.classList.remove('box-collapse-open')
+    document.body.classList.add('box-collapse-closed')
 }
 
 export default SearchOverlay;
