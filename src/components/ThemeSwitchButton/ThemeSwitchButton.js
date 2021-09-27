@@ -1,7 +1,7 @@
 import React from "react";
-import "./DarkThemeSwitchBtn.css";
+import "./ThemeSwitchButton.css";
 
-function DarkThemeSwitchBtn(props) {
+function ThemeSwitchButton(props) {
     let active;
     let buttonClassName;
 
@@ -31,4 +31,4 @@ function DarkThemeSwitchBtn(props) {
     );
 }
 
-export default DarkThemeSwitchBtn;
+export default ThemeSwitchButton;

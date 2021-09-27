@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 
 function App() {
-    // initially lite theme is active
     let [darkThemeActive, setDarkThemeActive] = useState(false);
 
     function switchActiveTheme() {
@@ -17,22 +16,6 @@ function App() {
         }
     }
 
-    useEffect(() => {
-        let headerFixedContainer = document.querySelector(".header-fixed");
-        let headerHeight = headerFixedContainer.clientHeight;
-        let lastScrolled = 0;
-
-        window.addEventListener("scroll", () => {
-            let scrolled = document.documentElement.scrollTop;
-            if (scrolled > lastScrolled) {
-                headerFixedContainer.style.top = `-${headerHeight + 40}px`;
-            } else {
-                headerFixedContainer.style.top = "0";
-            }
-            lastScrolled = scrolled;
-        });
-    });
-
     return (
         <div>
             <Header
@@ -44,6 +27,7 @@ function App() {
             {/*<HowItWorks isdarkThemeActive={darkThemeActive} />*/}
             {/*<Testimonial isdarkThemeActive={darkThemeActive} />*/}
             {/*<GetStarted isdarkThemeActive={darkThemeActive} />*/}
+
             <Footer isdarkThemeActive={darkThemeActive} />
 
             <ScrollToTop

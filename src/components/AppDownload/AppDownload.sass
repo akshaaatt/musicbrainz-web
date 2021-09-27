@@ -1,0 +1,52 @@
+.wrapper
+  border-top: 2px solid $download-app-border-top
+
+  .section
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    padding: 5rem 0
+
+    +respond($small-desktop)
+      flex-direction: column
+
+    .content
+      +respond($small-desktop)
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        text-align: center
+
+      .title
+        font-size: $download-title-font-size
+
+      .description
+        font-size: $download-description-font-size
+
+      .stores
+        display: flex
+
+        .store
+          width: 18.5rem
+
+          +respond($phone)
+            width: 15rem
+            height: 5rem
+
+          +pointer-on-hover
+
+          &:not(:last-of-type)
+            margin-right: 3rem
+
+    .image
+      width: 34vw
+
+      +respond($med-desktop)
+        width: 40vw
+
+      +respond($small-desktop)
+        width: 100vw
+
+        margin-top: 4rem

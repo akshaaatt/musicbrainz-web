@@ -54,7 +54,6 @@ const Intro = props => {
                </div>
              </div>
              <div className="propery-carousel-pagination carousel-pagination"/>
-
            </div>
          </section>
       )
