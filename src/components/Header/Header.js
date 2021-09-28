@@ -86,7 +86,7 @@ function Header(props) {
 
         </div>
       </nav>
-  );
+  )
 }
 
 const attach = e => {

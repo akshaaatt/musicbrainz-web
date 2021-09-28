@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
+import TrustedCompanies from "./TrustedCompanies/TrustedCompanies";
 
 function App() {
     let [darkThemeActive, setDarkThemeActive] = useState(false);
@@ -27,6 +28,7 @@ function App() {
             {/*<HowItWorks isdarkThemeActive={darkThemeActive} />*/}
             {/*<Testimonial isdarkThemeActive={darkThemeActive} />*/}
             {/*<GetStarted isdarkThemeActive={darkThemeActive} />*/}
+            <TrustedCompanies/>
 
             <Footer isdarkThemeActive={darkThemeActive} />
 
