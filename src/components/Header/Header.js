@@ -5,7 +5,7 @@ import SearchOverlay from "./SearchOverlay";
 
 function Header(props) {
   let headerBg;
-  if (props.isdarkThemeActive) {
+  if (props.isDarkThemeActive) {
     headerBg = "navbar navbar-default navbar-trans navbar-expand-lg fixed-top navbar-ok";
   } else {
     headerBg = "navbar navbar-default navbar-trans navbar-expand-lg fixed-top";
@@ -55,7 +55,7 @@ function Header(props) {
             </ul>
           </div>
           <ThemeSwitchButton
-              dark={props.isdarkThemeActive}
+              dark={props.isDarkThemeActive}
               changeTheme={props.switchActiveTheme}
           />
           <div className="d-none d-md-block general-margins">

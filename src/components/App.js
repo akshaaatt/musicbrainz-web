@@ -20,10 +20,10 @@ function App() {
 
     return (
         <div>
-            <Header isdarkThemeActive={darkThemeActive} switchActiveTheme={switchActiveTheme}/>
+            <Header isDarkThemeActive={darkThemeActive} switchActiveTheme={switchActiveTheme}/>
             <Intro/>
             <TrustedCompanies/>
-            <Footer isdarkThemeActive={darkThemeActive} />
+            <Footer isDarkThemeActive={darkThemeActive} />
             <ScrollToTop
                 icon="bi bi-caret-up-fill"
                 backgroundColor = "#EB743B"

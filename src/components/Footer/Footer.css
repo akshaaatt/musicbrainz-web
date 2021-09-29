@@ -119,7 +119,7 @@ a:hover {
 .color-d {
   color: #adadad;
 }
-color-purple {
+.color-purple {
   color: #ba478f;
 }
 
@@ -359,51 +359,6 @@ color-purple {
 
 .socials-a .list-inline-item:not(:last-child) {
   margin-right: 25px;
-}
-
-/*======================================
-//--//-->   BUTTON
-======================================*/
-.btn {
-  transition: .5s ease;
-}
-
-.btn.btn-a, .btn.btn-b {
-  border-radius: 0;
-  padding: 1rem 3rem;
-  letter-spacing: .05rem;
-}
-
-.btn.btn-a {
-  text-decoration: none;
-  background-color: #000000;
-  color: #ffffff;
-}
-
-.btn.btn-a:hover {
-  background-color: #ba478f;
-  color: #000000;
-}
-
-.btn.btn-b {
-  background-color: #ba478f;
-  color: #000000;
-}
-
-.btn.btn-b:hover {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-.btn.btn-b-n {
-  background-color: #ba478f;
-  color: #ffffff;
-  border-radius: 0;
-}
-
-.btn.btn-b-n:hover {
-  background-color: #26a356;
-  color: #ffffff;
 }
 
 /*--------------------------------------------------------------

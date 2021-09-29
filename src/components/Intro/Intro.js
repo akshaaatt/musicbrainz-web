@@ -16,10 +16,10 @@ function Intro(props) {
                     <div className="row">
                       <div className="col-lg-8">
                         <div className="intro-body">
-                          <p className="intro-title-top">Doral, Florida
+                          <p className="intro-title-top">Recently Added
                           </p>
                           <h1 className="intro-title mb-4 ">
-                            <span className="color-b">204 </span> Mount
+                            <span className="color-b">Curled Up Remixes </span>
                           </h1>
                         </div>
                       </div>

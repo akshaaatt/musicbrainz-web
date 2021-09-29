@@ -1,16 +1,19 @@
 import React from "react";
-import './style.css';
+import './Footer.css';
 
 const Footer = props => {
-  let footerBg;
-  if (props.isdarkThemeActive) {
-    footerBg = "section-footer navbar-ok";
+  let footerBg, sectionBg;
+  if (props.isDarkThemeActive) {
+    sectionBg = "section-footer navbar-ok";
+    footerBg = "navbar-ok";
   } else {
-    footerBg = "section-footer";
+    sectionBg = "section-footer";
+    footerBg = "";
   }
+
   return (
       <>
-        <section className={footerBg}>
+        <section className={sectionBg}>
           <div className="container">
             <div className="row">
               <div className="col-sm-12 col-md-4">
@@ -137,7 +140,7 @@ const Footer = props => {
             </div>
           </div>
         </section>
-        <footer>
+        <footer className={footerBg}>
           <div className="container">
             <div className="row">
               <div className="col-md-3 d-none d-md-block">
