@@ -1,17 +1,20 @@
 import React from "react";
 import "./Header.css";
 import ThemeSwitchButton from "../ThemeSwitchButton/ThemeSwitchButton";
+import SearchOverlay from "./SearchOverlay";
 
 function Header(props) {
   let headerBg;
   if (props.isdarkThemeActive) {
-    headerBg = "header-wrapper header-wrapper-active";
+    headerBg = "navbar navbar-default navbar-trans navbar-expand-lg fixed-top navbar-ok";
   } else {
-    headerBg = "header-wrapper";
+    headerBg = "navbar navbar-default navbar-trans navbar-expand-lg fixed-top";
   }
 
   return (
-      <nav className="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+      <>
+      <SearchOverlay/>
+      <nav className={headerBg}>
         <div className="container">
           <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span/>
@@ -20,7 +23,7 @@ function Header(props) {
           </button>
           <a className="navbar-brand text-brand" href="#"><span className="color-purple">Music</span><span className="color-b">Brainz</span></a>
 
-          <div className="navbar-collapse collapse justify-content-center" id="navbarDefault">
+          <div className="navbar-collapse collapse" id="navbarDefault">
             <ul className="navbar-nav">
 
               <li className="nav-item">
@@ -86,6 +89,7 @@ function Header(props) {
 
         </div>
       </nav>
+      </>
   )
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
+import './style.css';
 
-function TrustedCompanies(props) {
+function TrustedCompanies() {
 
     return (
         <section id="clients" className="clients">
@@ -8,16 +9,13 @@ function TrustedCompanies(props) {
 
                 <div className="section-title">
                     <h2>Our Clients</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-                        sit in iste officiis commodi quidem hic quas.</p>
+                    <p></p>
                 </div>
 
                 <div className="clients-slider swiper-container">
                     <div className="swiper-wrapper align-items-center">
+
                         <div className="swiper-slide"><img src="assets/img/trusted-partners/Google.jpg" className="img-fluid" alt=""/>
-                        </div>
-                        <div className="swiper-slide"><img src="assets/img/clients/client-2.png" className="img-fluid" alt=""/>
                         </div>
                         <div className="swiper-slide"><img src="assets/img/clients/client-3.png" className="img-fluid" alt=""/>
                         </div>

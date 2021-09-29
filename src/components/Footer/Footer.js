@@ -1,10 +1,16 @@
-import  "./Footer.css";
 import React from "react";
+import './style.css';
 
-const Footer = () => {
+const Footer = props => {
+  let footerBg;
+  if (props.isdarkThemeActive) {
+    footerBg = "section-footer navbar-ok";
+  } else {
+    footerBg = "section-footer";
+  }
   return (
       <>
-        <section className="section-footer">
+        <section className={footerBg}>
           <div className="container">
             <div className="row">
               <div className="col-sm-12 col-md-4">

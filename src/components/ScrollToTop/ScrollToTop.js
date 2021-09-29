@@ -116,9 +116,9 @@ ScrollToTop.defaultProps = {
     opacity: "0.9"
   },
   borderRadius: 48,
-  margin: "12px",
+  margin: "10px",
   fontSize: "18px",
-  padding: "16px",
+  padding: "12px",
   opacity: "1",
   border: "none",
   text: "",

@@ -1,3 +1,5 @@
+import './SearchOverlay.css';
+
 const SearchOverlay = props => {
         return(
             <div className="box-collapse">

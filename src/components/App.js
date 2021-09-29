@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import TrustedCompanies from "./TrustedCompanies/TrustedCompanies";
+import Intro from "./Intro/Intro";
 
 function App() {
     let [darkThemeActive, setDarkThemeActive] = useState(false);
@@ -19,23 +20,14 @@ function App() {
 
     return (
         <div>
-            <Header
-                isdarkThemeActive={darkThemeActive}
-                switchActiveTheme={switchActiveTheme}
-            />
-            {/*<Hero isdarkThemeActive={darkThemeActive} />*/}
-            {/*<Feature isdarkThemeActive={darkThemeActive} />*/}
-            {/*<HowItWorks isdarkThemeActive={darkThemeActive} />*/}
-            {/*<Testimonial isdarkThemeActive={darkThemeActive} />*/}
-            {/*<GetStarted isdarkThemeActive={darkThemeActive} />*/}
+            <Header isdarkThemeActive={darkThemeActive} switchActiveTheme={switchActiveTheme}/>
+            <Intro/>
             <TrustedCompanies/>
-
             <Footer isdarkThemeActive={darkThemeActive} />
-
             <ScrollToTop
-                icon="fas fa-arrow-up"
+                icon="bi bi-caret-up-fill"
                 backgroundColor = "#EB743B"
-                position={{ bottom: "10%", right: "0%" }}
+                position={{ bottom: "12%", right: "0%" }}
                 hover={{ backgroundColor: "purple", opacity: "0.95" }}
                 margin="24px"
             />
