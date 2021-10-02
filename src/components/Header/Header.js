@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import "../App.css";
 import ThemeSwitchButton from "../ThemeSwitchButton/ThemeSwitchButton";
 import SearchOverlay from "./SearchOverlay";
 
@@ -7,7 +8,8 @@ function Header(props) {
   let headerBg;
   if (props.isDarkThemeActive) {
     headerBg = "navbar navbar-default navbar-trans navbar-expand-lg fixed-top navbar-ok";
-  } else {
+  }
+  else {
     headerBg = "navbar navbar-default navbar-trans navbar-expand-lg fixed-top";
   }
 
