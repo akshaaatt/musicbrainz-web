@@ -378,6 +378,8 @@ a:hover {
     background-color: #ba478f;
     width: 36px;
 }
+
+/*------/ Buttons /------*/
 .btn {
     transition: .3s ease;
 }
