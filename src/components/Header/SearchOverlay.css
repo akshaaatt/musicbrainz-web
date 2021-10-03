@@ -5,9 +5,14 @@
     right: 0;
     width: 100%;
     z-index: 1040;
-    background-color: #ffffff;
+    background: #ffffff;
     transform: translateX(100%);
     transition: all 0.1s ease;
+}
+
+.navbar-ok{
+    background: #263238;
+    color: #FFFFFF;
 }
 
 @media (min-width: 768px) {

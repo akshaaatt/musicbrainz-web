@@ -1,0 +1,23 @@
+.bs :root {
+    --blue: #4e7ec2;
+    --indigo: #6610f2;
+    --purple: #ba478f;
+    --pink: #e83e8c;
+    --red: #c64040;
+    --orange: #eb743b;
+    --yellow: #ffcd5c;
+    --green: #68B360;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #ba478f;
+    --secondary: #6c757d;
+    --success: #68B360;
+    --info: #d691bc;
+    --warning: #ffcd5c;
+    --danger: #c64040;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}

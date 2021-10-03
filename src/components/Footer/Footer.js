@@ -1,13 +1,14 @@
 import React from "react";
 import './Footer.css';
+import '../App.css';
 
 const Footer = props => {
   let footerBg, sectionBg;
   if (props.isDarkThemeActive) {
-    sectionBg = "section-footer navbar-ok";
+    sectionBg = "navbar-ok section-footer-utils";
     footerBg = "navbar-ok";
   } else {
-    sectionBg = "section-footer";
+    sectionBg = "section-footer section-footer-utils";
     footerBg = "";
   }
 
@@ -20,24 +21,24 @@ const Footer = props => {
                 <div className="widget-a">
                   <div className="w-header-a">
                     <h3 className="navbar-brand text-brand"><img src="assets/img/meb-icons/MusicBrainz.svg" width="52" height="52" alt="image"/> <span className="color-purple">Music</span><span
-                        className="color-b">Brainz</span></h3>
+                        className="color-orange">Brainz</span></h3>
                   </div>
                   <br/>
                   <div className="w-body-a">
-                    <p className="w-text-a color-text-a">
+                    <p className="w-text-a color-gray">
                       is an open music encyclopedia that collects music metadata and makes it available to the public.
                     </p>
                   </div>
                   <div className="w-footer-a">
                     <ul className="list-unstyled">
                       <li className="color-a">
-                        <span className="color-text-a">Development IRC: </span> <a href="https://kiwiirc.com/nextclient/irc.libera.chat/?#metabrainz" target="_blank"> #metabrainz</a>
+                        <span className="color-gray">Development IRC: </span> <a href="https://kiwiirc.com/nextclient/irc.libera.chat/?#metabrainz" target="_blank"> #metabrainz</a>
                       </li>
                       <li className="color-a">
-                        <span className="color-text-a">Discussion IRC: </span> <a href="https://kiwiirc.com/nextclient/irc.libera.chat/?#metabrainz" target="_blank"> #musicbrainz</a>
+                        <span className="color-gray">Discussion IRC: </span> <a href="https://kiwiirc.com/nextclient/irc.libera.chat/?#metabrainz" target="_blank"> #musicbrainz</a>
                       </li>
                       <li className="color-a" >
-                        <span className="color-text-a">Email: </span> <a href="mailto:support@metabrainz.org">support@metabrainz.org </a>
+                        <span className="color-gray">Email: </span> <a href="mailto:support@metabrainz.org">support@metabrainz.org </a>
                       </li>
                     </ul>
                   </div>
@@ -140,26 +141,27 @@ const Footer = props => {
             </div>
           </div>
         </section>
+
         <footer className={footerBg}>
           <div className="container">
             <div className="row">
               <div className="col-md-3 d-none d-md-block">
                 <div className="copyright-footer">
-                  <p className="copyright color-text-a">
+                  <p className="copyright color-gray">
                     OSS Geek?  <a href="https://github.com/metabrainz/musicbrainz-server" target="_blank"> <span className="color-a"> Contribute Here </span> </a>
                   </p>
                 </div>
               </div>
               <div className="col-md-6">
                 <div className="copyright-footer">
-                  <p className="copyright color-text-a">
+                  <p className="copyright color-gray">
                     Brought to you by <img src="assets/img/meb-icons/MetaBrainz.svg" width="30" height="30" alt="image"/> <span className="color-a"> MetaBrainz Foundation </span>
                   </p>
                 </div>
               </div>
               <div className="col-md-3 d-none d-md-block">
                 <div className="copyright-footer">
-                  <p className="copyright color-text-a">
+                  <p className="copyright color-gray">
                     Found an Issue?  <a href="https://tickets.metabrainz.org/" target="_blank"> <span className="color-a"> Report Here </span></a>
                   </p>
                 </div>

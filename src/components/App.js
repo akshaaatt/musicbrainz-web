@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import "bootstrap-icons/font/bootstrap-icons.css";
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import TrustedCompanies from "./TrustedCompanies/TrustedCompanies";
 import Intro from "./Intro/Intro";
+import Projects from "./Projects/Projects";
 
 function App() {
     let [darkThemeActive, setDarkThemeActive] = useState(false);
@@ -23,6 +27,7 @@ function App() {
             <Header isDarkThemeActive={darkThemeActive} switchActiveTheme={switchActiveTheme}/>
             <Intro/>
             <TrustedCompanies/>
+            <Projects/>
             <Footer isDarkThemeActive={darkThemeActive} />
             <ScrollToTop
                 icon="bi bi-caret-up-fill"

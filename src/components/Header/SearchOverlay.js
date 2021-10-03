@@ -1,8 +1,15 @@
 import './SearchOverlay.css';
 
 const SearchOverlay = props => {
+    let headerBg;
+    if (props.isDarkThemeActive) {
+        headerBg = "box-collapse navbar-ok";
+    }
+    else {
+        headerBg = "box-collapse";
+    }
         return(
-            <div className="box-collapse">
+            <div className={headerBg}>
                 <div className="title-box-d">
                     <h3 className="title-d">Search</h3>
                 </div>

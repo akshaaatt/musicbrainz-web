@@ -1,23 +1,23 @@
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
 .section-footer {
-  padding-top: 60px;
-  margin-top: 60px;
   background: #f3f3f3;
 }
 
-.section-footer ul {
+.section-footer-utils{
+  padding-top: 60px;
+  margin-top: 60px;
+}
+
+.section-footer-utils ul {
   line-height: 2;
 }
 
-.section-footer .item-list-a i {
+.section-footer-utils .item-list-a i {
   font-size: 18px;
   padding-right: 4px;
   color: #ba478f;
 }
 
-.section-footer .widget-a .w-title-a {
+.section-footer-utils .widget-a .w-title-a {
   margin-bottom: 1rem;
 }
 

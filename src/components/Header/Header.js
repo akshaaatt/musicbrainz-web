@@ -23,7 +23,7 @@ function Header(props) {
             <span/>
             <span/>
           </button>
-          <a className="navbar-brand text-brand" href="#"><span className="color-purple">Music</span><span className="color-b">Brainz</span></a>
+          <a className="navbar-brand text-brand" href="#"><span className="color-purple">Music</span><span className="color-orange">Brainz</span></a>
 
           <div className="navbar-collapse collapse" id="navbarDefault">
             <ul className="navbar-nav">
