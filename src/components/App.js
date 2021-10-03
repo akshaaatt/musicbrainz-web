@@ -8,6 +8,7 @@ import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import TrustedCompanies from "./TrustedCompanies/TrustedCompanies";
 import Intro from "./Intro/Intro";
 import Projects from "./Projects/Projects";
+import "./colors.css";
 
 function App() {
     let [darkThemeActive, setDarkThemeActive] = useState(false);
@@ -16,9 +17,11 @@ function App() {
         if (darkThemeActive) {
             setDarkThemeActive(false);
             document.querySelector("#root").style.backgroundColor = "white";
+            document.documentElement.className = 'theme-light';
         } else {
             setDarkThemeActive(true);
             document.querySelector("#root").style.backgroundColor = "#1C2431";
+            document.documentElement.className = 'theme-dark';
         }
     }
 

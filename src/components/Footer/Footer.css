@@ -1,5 +1,7 @@
+@import "../colors.css";
+
 .section-footer {
-  background: #f3f3f3;
+  background: var(--color-primary);
 }
 
 .section-footer-utils{
