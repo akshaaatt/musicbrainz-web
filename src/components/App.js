@@ -10,6 +10,8 @@ import Intro from "./Intro/Intro";
 import Projects from "./Projects/Projects";
 import "./colors.css";
 import AppDownload from "./AppDownload/AppDownload";
+import About from "./About/About";
+import Facts from "./Facts/Facts";
 
 function App() {
     let [darkThemeActive, setDarkThemeActive] = useState(false);
@@ -21,7 +23,7 @@ function App() {
             document.documentElement.className = 'theme-light';
         } else {
             setDarkThemeActive(true);
-            document.querySelector("#root").style.backgroundColor = "#1C2431";
+            document.querySelector("#root").style.backgroundColor = "#243133";
             document.documentElement.className = 'theme-dark';
         }
     }
@@ -30,6 +32,8 @@ function App() {
         <div>
             <Header isDarkThemeActive={darkThemeActive} switchActiveTheme={switchActiveTheme}/>
             <Projects/>
+            <About/>
+            <Facts/>
             <TrustedCompanies/>
             <AppDownload/>
             <Footer isDarkThemeActive={darkThemeActive} />

@@ -1,0 +1,38 @@
+.cta-section {
+  background: linear-gradient(to right, purple 0%, orange 100%);
+  color: #fff;
+}
+.cta-section h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+}
+.cta-section .btn {
+  background: #000000;
+  color: #fff;
+}
+.cta-section .btn i {
+  margin-right: 5px;
+  font-size: 24px;
+  line-height: 0;
+}
+section {
+  overflow: hidden;
+}
+
+.section {
+  padding: 7rem 0;
+}
+
+.section-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(-45deg, purple, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

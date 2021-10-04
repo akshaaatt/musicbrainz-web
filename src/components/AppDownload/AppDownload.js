@@ -11,9 +11,7 @@ function AppDownload() {
                     </div>
                     <div className="col-md-5 text-center text-md-end">
                         <p>
-                            <a href="#" className="btn d-inline-flex align-items-center">
-                                <i className="fab fa-apple"/><span>App store</span></a>
-                            <a href="#" className="btn d-inline-flex align-items-center">
+                            <a href="https://play.google.com/store/apps/details?id=org.metabrainz.android" target="_blank" className="btn d-inline-flex align-items-center">
                                 <i className="fab fa-google-play"/><span>Google play</span>
                             </a>
                         </p>
