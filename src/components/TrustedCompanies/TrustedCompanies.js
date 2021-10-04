@@ -8,7 +8,7 @@ function TrustedCompanies() {
 
             <div className="container" data-aos="fade-up">
                 <div className="section-header">
-                    <h2>Sponsors</h2>
+                    <h2>Supporters</h2>
                 </div>
 
                 <div className="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">

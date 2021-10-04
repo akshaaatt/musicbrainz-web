@@ -12,6 +12,8 @@ import "./colors.css";
 import AppDownload from "./AppDownload/AppDownload";
 import About from "./About/About";
 import Facts from "./Facts/Facts";
+import Services from "./Services/Services";
+import Features from "./Features/Features";
 
 function App() {
     let [darkThemeActive, setDarkThemeActive] = useState(false);
@@ -34,6 +36,8 @@ function App() {
             <Projects/>
             <About/>
             <Facts/>
+            <Services/>
+            <Features/>
             <TrustedCompanies/>
             <AppDownload/>
             <Footer isDarkThemeActive={darkThemeActive} />
