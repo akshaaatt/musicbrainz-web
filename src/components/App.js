@@ -9,6 +9,7 @@ import TrustedCompanies from "./TrustedCompanies/TrustedCompanies";
 import Intro from "./Intro/Intro";
 import Projects from "./Projects/Projects";
 import "./colors.css";
+import AppDownload from "./AppDownload/AppDownload";
 
 function App() {
     let [darkThemeActive, setDarkThemeActive] = useState(false);
@@ -28,9 +29,9 @@ function App() {
     return (
         <div>
             <Header isDarkThemeActive={darkThemeActive} switchActiveTheme={switchActiveTheme}/>
-            <Intro/>
-            <TrustedCompanies/>
             <Projects/>
+            <TrustedCompanies/>
+            <AppDownload/>
             <Footer isDarkThemeActive={darkThemeActive} />
             <ScrollToTop
                 icon="bi bi-caret-up-fill"
