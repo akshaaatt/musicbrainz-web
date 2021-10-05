@@ -3,34 +3,30 @@ import './Intro.css';
 
 function Intro(props) {
     return(
-        <div className="intro intro-carousel swiper-container position-relative">
+        <section id="hero" className="hero d-flex align-items-center">
 
-          <div className="swiper-wrapper">
-
-            <div className="swiper-slide carousel-item-a intro-item bg-image"
-                 style={{ backgroundImage: `url(../../assets/img/slide-1.jpg)`}}>
-              <div className="overlay overlay-a"/>
-              <div className="intro-content display-table">
-                <div className="table-cell">
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-lg-8">
-                        <div className="intro-body">
-                          <p className="intro-title-top">Recently Added
-                          </p>
-                          <h1 className="intro-title mb-4 ">
-                            <span className="color-b">Curled Up Remixes </span>
-                          </h1>
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-6 d-flex flex-column justify-content-center">
+                        <h1 data-aos="fade-up">Open Sourced Music Database</h1>
+                        <h2 data-aos="fade-up" data-aos-delay="400">Edit, Explore and Develop</h2>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <div className="text-center text-lg-start">
+                                <a href="#about"
+                                   className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                    <span>Get Started</span>
+                                    <i className="bi bi-arrow-right"/>
+                                </a>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                    <div className="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                        <img src="assets/img/demo.jpg" className="img-fluid" alt=""/>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div className="swiper-pagination"/>
-        </div>
+
+        </section>
 )
 }
 export default Intro;

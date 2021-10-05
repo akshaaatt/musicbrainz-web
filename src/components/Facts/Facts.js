@@ -4,28 +4,48 @@ import './Facts.css';
 function Facts() {
     return(
         <section id="counts" className="counts">
-            <div className="container">
+            <div className="container" data-aos="fade-up">
 
-                <div className="row counters">
+                <div className="row gy-4">
 
-                    <div className="col-lg-3 col-6 text-center">
-                        <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" className="purecounter"/>
-                        <p>Artists</p>
+                    <div className="col-lg-3 col-md-6">
+                        <div className="count-box">
+                            <i className="bi bi-music-note-list"/>
+                            <div>
+                                <span>1.9M +</span>
+                                <p>Artists</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div className="col-lg-3 col-6 text-center">
-                        <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" className="purecounter"/>
-                        <p>Releases</p>
+                    <div className="col-lg-3 col-md-6">
+                        <div className="count-box">
+                            <i className="bi bi-journal-richtext"/>
+                            <div>
+                                <span>3M +</span>
+                                <p>Releases</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div className="col-lg-3 col-6 text-center">
-                        <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" className="purecounter"/>
-                        <p>Users</p>
+                    <div className="col-lg-3 col-md-6">
+                        <div className="count-box">
+                            <i className="bi bi-headset"/>
+                            <div>
+                                <span>35M +</span>
+                                <p>Tracks</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div className="col-lg-3 col-6 text-center">
-                        <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" className="purecounter"/>
-                        <p>Lines of Code</p>
+                    <div className="col-lg-3 col-md-6">
+                        <div className="count-box">
+                            <i className="bi bi-people"/>
+                            <div>
+                                <span>2.17M +</span>
+                                <p>Editors</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>

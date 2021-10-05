@@ -33,7 +33,7 @@ function App() {
     return (
         <div>
             <Header isDarkThemeActive={darkThemeActive} switchActiveTheme={switchActiveTheme}/>
-            <Projects/>
+            <Intro/>
             <About/>
             <Facts/>
             <Services/>
