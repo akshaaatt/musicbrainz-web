@@ -4,7 +4,7 @@
 .about .content h3 {
   font-weight: 600;
   font-size: 32px;
-  color: #2c4964;
+  color: purple;
 }
 .about .content ul {
   list-style: none;
@@ -16,7 +16,7 @@
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #5846f9;
+  color: purple;
 }
 .about .content p:last-child {
   margin-bottom: 0;
@@ -31,11 +31,11 @@
   border-radius: 5px;
   transition: 0.5s;
   color: #fff;
-  background: linear-gradient(45deg, #5846f9 0%, #7b27d8 100%);
+  background: linear-gradient(45deg, purple 0%, orange 100%);
   position: relative;
 }
 .about .content .read-more:hover {
-  background: linear-gradient(180deg, #5846f9 0%, #7b27d8 100%);
+  background: linear-gradient(180deg, purple 0%, orange 100%);
 }
 .about .content .read-more i {
   font-size: 22px;

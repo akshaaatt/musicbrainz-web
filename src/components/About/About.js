@@ -8,7 +8,7 @@ function AppDownload() {
 
                 <div className="row">
                     <div className="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
-                        <img src="assets/img/demo.jpg" className="img-fluid" alt=""/>
+                        <img src="assets/img/music.jpg" className="img-fluid" alt=""/>
                     </div>
                     <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
                         <h3>What is MusicBrainz?</h3>
