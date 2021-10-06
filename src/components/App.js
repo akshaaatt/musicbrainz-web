@@ -7,13 +7,14 @@ import Footer from './Footer/Footer';
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import TrustedCompanies from "./TrustedCompanies/TrustedCompanies";
 import Intro from "./Intro/Intro";
-import Projects from "./Projects/Projects";
+import "react-multi-carousel/lib/styles.css";
 import "./colors.css";
 import AppDownload from "./AppDownload/AppDownload";
 import About from "./About/About";
 import Facts from "./Facts/Facts";
 import Services from "./Services/Services";
 import Features from "./Features/Features";
+import Blogs from "./Blogs/Blogs";
 
 function App() {
     let [darkThemeActive, setDarkThemeActive] = useState(false);
@@ -39,6 +40,7 @@ function App() {
             <Services/>
             <Features/>
             <TrustedCompanies/>
+            <Blogs/>
             <AppDownload/>
             <Footer isDarkThemeActive={darkThemeActive} />
             <ScrollToTop

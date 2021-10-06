@@ -10,11 +10,12 @@ function AppDownload() {
                         <h2>Download and Use our App on Mobile</h2>
                     </div>
                     <div className="col-md-5 text-center text-md-end">
-                        <p>
-                            <a href="https://play.google.com/store/apps/details?id=org.metabrainz.android" target="_blank" className="btn d-inline-flex align-items-center">
-                                <i className="fab fa-google-play"/><span>Google play</span>
-                            </a>
-                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=org.metabrainz.android" target="_blank" className="btn d-inline-flex align-items-center">
+                            <i className="fab fa-google-play"/><span>Google play</span>
+                        </a>
+                        <a href="https://f-droid.org/en/packages/org.metabrainz.android/" target="_blank" className="btn d-inline-flex align-items-center">
+                            <i className="fab fa-android"/><span>F-Droid</span>
+                        </a>
                     </div>
                 </div>
             </div>
