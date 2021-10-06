@@ -1,5 +1,6 @@
 .hero {
   width: 100%;
+  margin-top: 40px;
   height: 100vh;
   background: #f3f3f3 top center no-repeat;
   background-size: cover;

@@ -1,7 +1,17 @@
 import React from "react";
+import { Timeline } from 'react-twitter-widgets'
 import './Intro.css';
 
 function Intro(props) {
+    let theme;
+    if (props.isDarkThemeActive) {
+        theme = "dark";
+    }
+    else {
+        theme = "light";
+    }
+    console.log(theme);
+
     return(
         <section id="hero" className="hero d-flex align-items-center">
 
@@ -21,7 +31,10 @@ function Intro(props) {
                         </div>
                     </div>
                     <div className="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-                        <img src="assets/img/demo.jpg" className="img-fluid" alt=""/>
+                        <Timeline
+                            dataSource={{ sourceType: "profile", screenName: "musicbrainz" }}
+                            options={{ theme: {theme}, width: "400", height: "600" }}
+                        />
                     </div>
                 </div>
             </div>
