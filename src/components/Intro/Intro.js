@@ -1,7 +1,6 @@
 import React from "react";
 import { Timeline } from 'react-twitter-widgets'
 import './Intro.css';
-import Blogs from "../Blogs/Blogs";
 
 function Intro(props) {
     let theme;
@@ -14,7 +13,6 @@ function Intro(props) {
 
     return(
         <section id="hero" className="hero d-flex align-items-center">
-
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8 d-flex flex-column">
@@ -40,8 +38,7 @@ function Intro(props) {
                     </div>
                 </div>
             </div>
-
         </section>
-)
+    )
 }
 export default Intro;

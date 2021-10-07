@@ -14,7 +14,7 @@ import About from "./About/About";
 import Facts from "./Facts/Facts";
 import Services from "./Services/Services";
 import Features from "./Features/Features";
-import Blogs from "./Blogs/Blogs";
+import FAQs from "./FAQs/FAQs";
 
 function App() {
     let [darkThemeActive, setDarkThemeActive] = useState(false);
@@ -40,7 +40,8 @@ function App() {
             <Services/>
             <Features/>
             <TrustedCompanies/>
-            {/*<Blogs/>*/}
+            {/*<RecentlyAdded/>*/}
+            <FAQs/>
             <AppDownload/>
             <Footer isDarkThemeActive={darkThemeActive} />
             <ScrollToTop
