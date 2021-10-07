@@ -25,7 +25,7 @@ function Header(props) {
           </button>
           <a className="navbar-brand text-brand" href="#"><span className="color-purple">Music</span><span className="color-orange">Brainz</span></a>
 
-          <div className="navbar-collapse collapse" id="navbarDefault">
+          <div className="navbar-collapse collapse justify-content-center" id="navbarDefault">
             <ul className="navbar-nav">
 
               <li className="nav-item">

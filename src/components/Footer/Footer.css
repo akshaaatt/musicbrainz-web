@@ -1,14 +1,14 @@
-@import "../colors.css";
-
 .section-footer {
   background: #f3f3f3;
 }
 
 .section-footer-utils{
   padding-top: 60px;
-  margin-top: 60px;
 }
-
+.section-footer-dark{
+  background: #263238;
+  color: #FFFFFF;
+}
 .section-footer-utils ul {
   line-height: 2;
 }

@@ -2,7 +2,7 @@
   width: 100%;
   margin-top: 40px;
   height: 100vh;
-  background: #f3f3f3 top center no-repeat;
+  background-image: url("https://images.unsplash.com/photo-1486556396467-d83d2b23514b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80");
   background-size: cover;
 }
 .hero h1 {

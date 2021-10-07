@@ -88,49 +88,6 @@ a:hover {
     left: 0;
 }
 
-/*------/ Pagination-a /------*/
-.pagination-a {
-    text-decoration: none;
-}
-
-.pagination-a .pagination .page-link {
-    margin: 0 .2rem;
-    border-color: transparent;
-    padding: .5rem .8rem;
-    color: #000000;
-}
-
-.pagination-a .pagination .page-link:hover, .pagination-a .pagination .page-link:active, .pagination-a .pagination .page-link:focus {
-    background-color: #ba478f;
-}
-
-.pagination-a .pagination .page-link span {
-    font-size: 1.2rem;
-}
-
-.pagination-a .pagination .next .page-link {
-    padding: .4rem .9rem;
-}
-
-.pagination-a .pagination .page-item:last-child .page-link {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.pagination-a .pagination .page-item:first-child .page-link {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.pagination-a .pagination .page-item.disabled .page-link {
-    padding: .4rem .9rem;
-    color: #555555;
-}
-
-.pagination-a .pagination .page-item.active .page-link {
-    background-color: #ba478f;
-}
-
 .a {
     text-decoration: none;
     color: #ba478f;
@@ -276,26 +233,6 @@ a:hover {
     padding: 0;
     height: 100%;
     width: 100%;
-}
-
-.carousel-pagination {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.carousel-pagination .swiper-pagination-bullet {
-    width: 18px;
-    height: 10px;
-    background-color: #555;
-    margin: 0 4px;
-    border-radius: 0;
-    opacity: 1;
-    transition: 0.3s;
-}
-
-.carousel-pagination .swiper-pagination-bullet-active {
-    background-color: #ba478f;
-    width: 36px;
 }
 
 /*------/ Buttons /------*/

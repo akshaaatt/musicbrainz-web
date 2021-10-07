@@ -5,8 +5,8 @@ import '../App.css';
 const Footer = props => {
   let footerBg, sectionBg;
   if (props.isDarkThemeActive) {
-    sectionBg = "navbar-ok section-footer-utils";
-    footerBg = "navbar-ok";
+    sectionBg = "section-footer-dark section-footer-utils";
+    footerBg = "section-footer-dark";
   } else {
     sectionBg = "section-footer section-footer-utils";
     footerBg = "";

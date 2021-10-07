@@ -93,6 +93,29 @@ function Intro(props) {
                             </div>
                         </li>
 
+                        <li data-aos="fade-up" data-aos-delay="600">
+                            <i className="bi bi-question-circle icon-help"/>
+                            <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" className="collapsed">
+                                How long will my edit(s) take to be approved / applied?
+                                <i className="bi bi-chevron-down icon-show"/><i className="bi bi-chevron-up icon-close"/></a>
+                            <div id="faq-list-6" className="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    It depends.
+
+                                    Some edits (punctuation, capitalization) are considered Auto-edits for all users and are applied immediately.
+
+                                    If you are changing an entity you yourself added less than 24 hours ago, you can enter most changes as auto-edits. Otherwise, most changes will require voting, and if no-one votes against your edit, it will be applied after 7 days.
+
+                                    If your edit receives three unanimous yes votes, it will generally be applied after 1 hour. If it is considered a destructive edit, however, the edit will be applied after 48 hours to allow adequate time for other editors to review.
+
+                                    If your edit receives more yes votes than no votes, it will be applied after 7 days.
+
+                                    For many edit types (anything that wouldn't result in lost data), an Auto-editor may approve your edit to apply it immediately. This is quite common for typo fixes, adding URL relationships and fixes to obvious mistakes but it is at the Auto-editor's discretion and they are not required to do so.
+
+                                    If your edit is to a popular artist that has many subscribers, you are likely to gather votes more quickly. If you provide evidence to back up your edits (as suggested in the Code of Conduct and How to Write Edit Notes) and your edits are of good quality, you will also collect yes votes more quickly.                                </p>
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
 

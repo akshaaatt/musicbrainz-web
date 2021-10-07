@@ -15,8 +15,7 @@ function Intro(props) {
         <section id="hero" className="hero d-flex align-items-center">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-8 d-flex flex-column">
-                        <img src="assets/img/demo.jpg" style={{width: '100%', height:'250px', objectFit:'cover'}}/>
+                    <div className="col-lg-8 d-flex flex-column justify-content-center">
                         <h1 data-aos="fade-up">Open Sourced Music Database</h1>
                         <h2 data-aos="fade-up" data-aos-delay="400">Edit, Explore and Develop</h2>
                         <div data-aos="fade-up" data-aos-delay="600">
