@@ -87,6 +87,7 @@ class Blogs extends React.Component {
                 <div className="section-title">
                     <h2 data-aos="fade-in">Blogs from MetaBrainz</h2>
                 </div>
+
                 <Carousel
                     ssr={false}
                     ref={el => (this.Carousel = el)}

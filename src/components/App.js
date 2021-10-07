@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import "bootstrap-icons/font/bootstrap-icons.css";
+import "react-multi-carousel/lib/styles.css";
+import "./colors.css";
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import TrustedCompanies from "./TrustedCompanies/TrustedCompanies";
 import Intro from "./Intro/Intro";
-import "react-multi-carousel/lib/styles.css";
-import "./colors.css";
 import AppDownload from "./AppDownload/AppDownload";
 import About from "./About/About";
 import Facts from "./Facts/Facts";
@@ -40,7 +40,7 @@ function App() {
             <Services/>
             <Features/>
             <TrustedCompanies/>
-            <Blogs/>
+            {/*<Blogs/>*/}
             <AppDownload/>
             <Footer isDarkThemeActive={darkThemeActive} />
             <ScrollToTop
