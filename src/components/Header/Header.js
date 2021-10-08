@@ -5,12 +5,14 @@ import ThemeSwitchButton from "../ThemeSwitchButton/ThemeSwitchButton";
 import SearchOverlay from "./SearchOverlay";
 
 function Header(props) {
-  let headerBg;
+  let headerBg, searchBackground;
   if (props.isDarkThemeActive) {
     headerBg = "navbar navbar-default navbar-trans navbar-expand-lg fixed-top navbar-ok";
+    searchBackground = "navbar-ok";
   }
   else {
     headerBg = "navbar navbar-default navbar-trans navbar-expand-lg fixed-top";
+    searchBackground = "";
   }
 
   return (
@@ -29,7 +31,7 @@ function Header(props) {
             <ul className="navbar-nav">
 
               <li className="nav-item">
-                <a className="nav-link active">About</a>
+                <a className="nav-link">About</a>
               </li>
 
               <li className="nav-item">
@@ -37,7 +39,7 @@ function Header(props) {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link ">API</a>
+                <a href="https://musicbrainz.org/doc/MusicBrainz_API" target="_blank" className="nav-link ">API</a>
               </li>
 
               <li className="nav-item">
@@ -61,11 +63,11 @@ function Header(props) {
               changeTheme={props.switchActiveTheme}
           />
           <div className="d-none d-md-block general-margins">
-            <input type="text" name="query" className="form-control" placeholder="Search"/>
+            <input type="text" name="query" className={"form-control "+ searchBackground} placeholder="Search"/>
           </div>
 
           <div className="d-none d-md-block general-margins">
-            <select id="type-selector" name="type" className="form-control">
+            <select id="type-selector" name="type" className={"form-control "+ searchBackground}>
               <option>Artist</option>
               <option>Release</option>
               <option>Recording</option>

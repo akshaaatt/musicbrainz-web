@@ -6,9 +6,6 @@ section {
 .section-bg {
   background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);
 }
-.mTop{
-  margin-top: 40px;
-}
 .section-title {
   text-align: center;
   padding-bottom: 30px;

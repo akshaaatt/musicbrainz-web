@@ -15,7 +15,7 @@ function Features() {
                 </div>
 
                 <div className="row content">
-                    <div className="col-md-5 mTop" data-aos="fade-right">
+                    <div className="col-md-5" data-aos="fade-right">
                         <img src="assets/img/meb-logos/listenbrainz.svg" className="img-fluid" alt=""/>
                     </div>
                     <div className="col-md-7 pt-4" data-aos="fade-left">

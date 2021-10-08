@@ -23,12 +23,12 @@ function Intro(props) {
                     <ul>
                         <li data-aos="fade-up" data-aos-delay="100">
                             <i className="bi bi-question-circle icon-help"/>
-                            <a data-bs-toggle="collapse" className="collapse" data-bs-target="#faq-list-1">
+                            <a data-bs-toggle="collapse" className="collapsed" data-bs-target="#faq-list-1">
                                 Do I have to provide an email address?
                                 <i className="bi bi-chevron-down icon-show"/>
                                 <i className="bi bi-chevron-up icon-close"/>
                             </a>
-                            <div id="faq-list-1" className="collapse show" data-bs-parent=".faq-list">
+                            <div id="faq-list-1" className="collapse" data-bs-parent=".faq-list">
                                 <p>
                                     You don't need to provide an email address, unless you want to change the contents of the database. If you do, the email address will need to be verified, so that other MusicBrainz editors can better communicate with you.
                                     If you enter your email address:
@@ -46,7 +46,8 @@ function Intro(props) {
                             <i className="bi bi-question-circle icon-help"/>
                             <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" className="collapsed">
                                 What about my privacy?
-                                <i className="bi bi-chevron-down icon-show"/><i className="bi bi-chevron-up icon-close"/></a>
+                                <i className="bi bi-chevron-down icon-show"/>
+                                <i className="bi bi-chevron-up icon-close"/></a>
                             <div id="faq-list-2" className="collapse" data-bs-parent=".faq-list">
                                 <p>
                                     Rest assured that we will not pass your email address on to anyone, including other MusicBrainz users, without your most explicit consent. At any time you can fill in your email address if it's currently blank, blank it if it's currently filled in, or change from one address to another. Read on for the full MusicBrainz Privacy Policy.

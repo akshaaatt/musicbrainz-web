@@ -29,7 +29,7 @@ function Intro(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 hero-img d-xs-none" data-aos="zoom-out" data-aos-delay="200">
+                    <div className="col-lg-4 hero-img d-xs-none d-md-block col-sm-0" data-aos="zoom-out" data-aos-delay="200">
                         <Timeline
                             dataSource={{ sourceType: "profile", screenName: "musicbrainz" }}
                             options={{ theme: theme, width: "400", height: "600" }}
