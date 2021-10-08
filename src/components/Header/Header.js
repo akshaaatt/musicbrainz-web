@@ -35,7 +35,7 @@ function Header(props) {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link ">Docs</a>
+                <a href="https://musicbrainz.org/doc/MusicBrainz_Documentation" target="_blank" className="nav-link ">Docs</a>
               </li>
 
               <li className="nav-item">
@@ -43,7 +43,7 @@ function Header(props) {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link ">Blog</a>
+                <a href="https://blog.metabrainz.org" target="_blank" className="nav-link ">Blog</a>
               </li>
 
               <li className="nav-item dropdown">
