@@ -13,7 +13,7 @@ import AppDownload from "./AppDownload/AppDownload";
 import About from "./About/About";
 import Facts from "./Facts/Facts";
 import Services from "./Services/Services";
-import Features from "./Features/Features";
+import Projects from "./Projects/Projects";
 import FAQs from "./FAQs/FAQs";
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
             <About/>
             <Facts/>
             <Services/>
-            <Features/>
+            <Projects isDarkThemeActive={darkThemeActive}/>
             <TrustedCompanies/>
             {/*<RecentlyAdded/>*/}
             <FAQs/>
