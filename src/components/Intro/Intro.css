@@ -1,8 +1,7 @@
 .hero {
   width: 100%;
-  margin-top: 40px;
   height: 100vh;
-  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.5)), url("https://musicbrainz.files.wordpress.com/2015/11/dscf4914.jpg");
+  background: #f3f3f3;
   background-size: cover;
 }
 .hero h1 {
@@ -46,6 +45,9 @@
 @media (min-width: 1024px) {
   .hero {
     background-attachment: fixed;
+  }
+  .posts-top{
+    margin-top: 80px;
   }
 }
 @media (max-width: 991px) {

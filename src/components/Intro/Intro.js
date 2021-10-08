@@ -49,20 +49,7 @@ class Intro extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 d-flex flex-column justify-content-center">
-                            <h1 data-aos="fade-up">Open Sourced Music Database</h1>
-                            <h2 data-aos="fade-up" data-aos-delay="400">
-                                Edit, Explore, Contribute and Develop!
-                            </h2>
-                            <div data-aos="fade-up" data-aos-delay="600">
-                                <div className="text-center text-lg-start">
-                                    <a href="https://musicbrainz.org" target="_blank"
-                                       className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                                        <span>Know More</span>
-                                        <i className="bi bi-arrow-right"/>
-                                    </a>
 
-                                </div>
-                            </div>
                             <Carousel
                                 ssr={false}
                                 ref={el => (this.Carousel = el)}
@@ -80,19 +67,38 @@ class Intro extends React.Component {
                                     }
                                 }}
                             >
-                                {this.state.data.map((post, indx) => {
-                                    return (
+                                {
+                                    this.state.data ? this.state.data.map((post, indx) => {
+                                        return (
 
-                                        <div className="card text-left mt-5" key={indx}>
-                                            <img style={{width: '100%', height: '250px', objectFit: 'cover'}}
-                                                 src={post.urlToImage} alt="Alt text"/>
-                                        </div>
+                                            <div className="card text-left mt-5" key={indx}>
+                                                <img style={{width: '100%', height: '250px', objectFit: 'cover'}}
+                                                     src={post.urlToImage} alt="Alt text"/>
+                                            </div>
 
-                                    )
-                                })}
+                                        )
+                                    }) :  <div className="card text-left mt-5" key="1">
+                                        <img style={{width: '100%', height: '250px', objectFit: 'cover'}}
+                                             src="assets/img/demo.jpg" alt="Alt text"/>
+                                    </div>
+                                }
                             </Carousel>
+                            <h1 data-aos="fade-up" style={{marginTop: "20px"}}>Open Sourced Music Database</h1>
+                            <h2 data-aos="fade-up" data-aos-delay="400">
+                                Free, online encyclopedia of music information. We are building an open-source database containing all the information you would ever want to know about songs, releases, and artists.
+                            </h2>
+                            <div data-aos="fade-up" data-aos-delay="600">
+                                <div className="text-center text-lg-start">
+                                    <a href="#about"
+                                       className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                        <span>Get Started</span>
+                                        <i className="bi bi-arrow-right"/>
+                                    </a>
+
+                                </div>
+                            </div>
                         </div>
-                        <div className="col-lg-4 hero-img d-none d-md-block col-sm-0" data-aos="zoom-out"
+                        <div className="col-lg-4 hero-img posts-top d-none d-md-block col-sm-0 " data-aos="zoom-out"
                              data-aos-delay="200">
                             <Timeline
                                 dataSource={{sourceType: "profile", screenName: "musicbrainz"}}
