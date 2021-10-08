@@ -12,7 +12,7 @@ import Intro from "./Intro/Intro";
 import AppDownload from "./AppDownload/AppDownload";
 import About from "./About/About";
 import Facts from "./Facts/Facts";
-import Services from "./Services/Services";
+import Explore from "./Explore/Explore";
 import Projects from "./Projects/Projects";
 import FAQs from "./FAQs/FAQs";
 
@@ -37,7 +37,7 @@ function App() {
             <Intro isDarkThemeActive={darkThemeActive}/>
             <About/>
             <Facts isDarkThemeActive={darkThemeActive}/>
-            <Services/>
+            <Explore/>
             <Projects isDarkThemeActive={darkThemeActive}/>
             <TrustedCompanies/>
             {/*<RecentlyAdded/>*/}
