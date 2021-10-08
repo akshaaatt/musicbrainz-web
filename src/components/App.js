@@ -36,7 +36,7 @@ function App() {
             <Header isDarkThemeActive={darkThemeActive} switchActiveTheme={switchActiveTheme}/>
             <Intro isDarkThemeActive={darkThemeActive}/>
             <About/>
-            <Facts/>
+            <Facts isDarkThemeActive={darkThemeActive}/>
             <Services/>
             <Projects isDarkThemeActive={darkThemeActive}/>
             <TrustedCompanies/>

@@ -1,9 +1,16 @@
 import React from "react";
 import './Facts.css';
 
-function Facts() {
+function Facts(props) {
+    let background;
+    if (props.isDarkThemeActive) {
+        background = "counts";
+    } else {
+        background = "counts";
+    }
+
     return(
-        <section id="counts" className="counts">
+        <section id="counts" className={background}>
             <div className="container" data-aos="fade-up">
 
                 <div className="row gy-4">
@@ -12,7 +19,7 @@ function Facts() {
                         <div className="count-box">
                             <i className="bi bi-music-note-list"/>
                             <div>
-                                <span>1.9M +</span>
+                                <span>1.881 M</span>
                                 <p>Artists</p>
                             </div>
                         </div>
@@ -22,7 +29,7 @@ function Facts() {
                         <div className="count-box">
                             <i className="bi bi-journal-richtext"/>
                             <div>
-                                <span>3M +</span>
+                                <span>3.003 M</span>
                                 <p>Releases</p>
                             </div>
                         </div>
@@ -32,7 +39,7 @@ function Facts() {
                         <div className="count-box">
                             <i className="bi bi-headset"/>
                             <div>
-                                <span>35M +</span>
+                                <span>35.196 M</span>
                                 <p>Tracks</p>
                             </div>
                         </div>
@@ -42,7 +49,7 @@ function Facts() {
                         <div className="count-box">
                             <i className="bi bi-people"/>
                             <div>
-                                <span>2.17M +</span>
+                                <span>2.177 M</span>
                                 <p>Editors</p>
                             </div>
                         </div>

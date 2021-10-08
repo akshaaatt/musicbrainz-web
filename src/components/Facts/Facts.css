@@ -2,6 +2,10 @@
   padding: 70px 0 60px;
   background: #f3f3f3;
 }
+.counts-dark {
+  padding: 70px 0 60px;
+  background: #f3f3f3;
+}
 .counts .count-box {
   display: flex;
   align-items: center;

@@ -31,7 +31,7 @@ function Header(props) {
             <ul className="navbar-nav">
 
               <li className="nav-item">
-                <a className="nav-link">About</a>
+                <a href="https://musicbrainz.org/doc/About" target="_blank" className="nav-link">About</a>
               </li>
 
               <li className="nav-item">

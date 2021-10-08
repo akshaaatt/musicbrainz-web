@@ -2,7 +2,7 @@
   width: 100%;
   margin-top: 40px;
   height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1486556396467-d83d2b23514b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80");
+  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.5)), url("https://musicbrainz.files.wordpress.com/2015/11/dscf4914.jpg");
   background-size: cover;
 }
 .hero h1 {
@@ -50,7 +50,7 @@
 }
 @media (max-width: 991px) {
   .hero {
-    height: auto;
+    background-attachment: fixed;
     padding: 120px 0 60px 0;
   }
   .hero .hero-img {
@@ -63,6 +63,7 @@
 }
 @media (max-width: 768px) {
   .hero {
+    background-attachment: fixed;
     text-align: center;
   }
   .hero h1 {
