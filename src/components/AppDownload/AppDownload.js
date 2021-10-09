@@ -16,7 +16,7 @@ function AppDownload() {
                         <a href="https://f-droid.org/en/packages/org.metabrainz.android/" target="_blank" className="btn d-inline-flex align-items-center">
                             <i className="fab fa-android"/><span>F-Droid</span>
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=org.metabrainz.android" target="_blank" className="btn d-inline-flex align-items-center">
+                        <a href="https://picard.musicbrainz.org" target="_blank" className="btn d-inline-flex align-items-center">
                             <i className="fa fa-laptop"/><span>Picard</span>
                         </a>
                     </div>
