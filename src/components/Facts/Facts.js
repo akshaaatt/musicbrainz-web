@@ -4,7 +4,7 @@ import './Facts.css';
 function Facts(props) {
     let background;
     if (props.isDarkThemeActive) {
-        background = "counts";
+        background = "counts-dark";
     } else {
         background = "counts";
     }
