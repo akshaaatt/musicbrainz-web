@@ -1,8 +1,7 @@
-import React, { Fragment } from "react";
+import React from "react";
 import './Intro.css';
 import Carousel from "react-multi-carousel";
 import axios from "axios";
-import ChoiceChip from "./ChoiceChip";
 
 const responsive = {
     desktop: {
@@ -29,7 +28,7 @@ class Intro extends React.Component {
 
     componentDidMount() {
         axios
-            .get(`https://itunes.apple.com/in/rss/topalbums/limit=100/json`)
+            .get(`https://itunes.apple.com/us/rss/topalbums/limit=100/json`)
             .then(res => {
                 this.setState({ posts: res.data.feed.entry });
             });
@@ -38,7 +37,7 @@ class Intro extends React.Component {
     render() {
         let searchBackground;
         if (this.props.isDarkThemeActive) {
-            searchBackground = "navbar-ok";
+            searchBackground = "";
         }
         else {
             searchBackground = "";
@@ -49,14 +48,29 @@ class Intro extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 d-flex flex-column justify-content-center">
-                            <h1 data-aos="fade-up" style={{marginTop: "20px"}}>Open Sourced Music Database</h1>
-                            <h2 data-aos="fade-up" data-aos-delay="400">
+                            <h1 data-aos="fade-up" style={{marginTop: "20px"}} className="special-font">Open Sourced Music Database</h1>
+                            <h2 data-aos="fade-up" data-aos-delay="400" className="special-font">
                                 Free, online encyclopedia of music information.
                             </h2>
 
                             <div className="row search-margins">
                                 <div className="col-10">
-                                    <input type="text" name="query" className={"form-control "+ searchBackground} placeholder="Search MusicBrainz Data"/>
+                                    <input type="text" name="query"
+                                           id="searchInput"
+                                           className={"form-control special-font"+ searchBackground}
+                                           style={{textTransform: "capitalize"}}
+                                           onKeyPress={event => {
+                                               if (event.key === "Enter") {
+                                                   const query = document.getElementById('searchInput');
+                                                   console.log(query.value);
+                                                   if(query.value.trim().length<1){
+                                                       return false;
+                                                   }
+                                                   window.open("https://musicbrainz.org/"+"search?type=" + "artist" + "&query=" +query.value,'_newtab');
+                                                   return false;
+                                               }
+                                           }}
+                                           placeholder="Search MusicBrainz Data"/>
                                 </div>
                                 <div className="col-2">
                                     <button type="button" className="btn btn-b-n">
@@ -64,24 +78,31 @@ class Intro extends React.Component {
                                     </button>
                                 </div>
                             </div>
-                            <Fragment>
-                                <ChoiceChip name="size">
-                                    Laptop
-                                </ChoiceChip>
-                                {' '}
-                                <ChoiceChip name="size">
-                                    Phone
-                                </ChoiceChip>
-                                {' '}
-                                <ChoiceChip name="size">
-                                    Other
-                                </ChoiceChip>
-                            </Fragment>
-
+                            <div className="choiceChips">
+                                <div className="chip">Artist</div>
+                                <div className="chip">Release</div>
+                                <div className="chip">Recording</div>
+                                <div className="chip">Label</div>
+                                <div className="chip">Work</div>
+                                <div className="chip">Release Group</div>
+                                <div className="chip">Area</div>
+                                <div className="chip">Place</div>
+                                <div className="chip">Annotation</div>
+                                <div className="chip">CD Stud</div>
+                                <div className="chip">Editor</div>
+                                <div className="chip">Tag</div>
+                                <div className="chip">Instrument</div>
+                                <div className="chip">Series</div>
+                                <div className="chip">Event</div>
+                                <div className="chip">Documentation</div>
+                            </div>
                             <Carousel
                                 ssr={false}
                                 ref={el => (this.Carousel = el)}
                                 partialVisbile={false}
+                                infinite={true}
+                                autoPlay={true}
+                                autoPlaySpeed={6000}
                                 itemClass="slider-image-item"
                                 responsive={responsive}
                                 containerClass="carousel-container-with-scrollbar"
@@ -111,16 +132,6 @@ class Intro extends React.Component {
                                     </div>
                                 }
                             </Carousel>
-                            <div data-aos="fade-up" data-aos-delay="600">
-                                <div className="text-center text-lg-start">
-                                    <a href="#about"
-                                       className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                                        <span>Get Started</span>
-                                        <i className="bi bi-arrow-right"/>
-                                    </a>
-
-                                </div>
-                            </div>
                         </div>
                         <div className="col-lg-4 intro-img posts-top d-none d-md-block col-sm-0 " data-aos="zoom-out"
                              data-aos-delay="200">
