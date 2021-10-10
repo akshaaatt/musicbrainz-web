@@ -1,0 +1,53 @@
+.mt-ripple {
+    --mt-ripple-color: rgba(0, 0, 0, 0.5);
+    --mt-ripple-spread: 1.2;
+
+    --_mt-ripple-spread: var(--mt-ripple-spread, 4);
+    --_mt-ripple-color: var(--mt-ripple-color, #fff);
+    --_mt-ripple-top: var(--mt-ripple-top, 50%);
+    --_mt-ripple-left: var(--mt-ripple-left, 50%);
+
+    all: initial;
+    font-size: inherit;
+
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.mt-ripple::after {
+    content: '';
+    position: absolute;
+    top: var(--_mt-ripple-top);
+    left: var(--_mt-ripple-left);
+    margin-top: calc(-0.625 * 1em);
+    margin-left: calc(-0.625 * 1em);
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: 200%;
+    background-color: var(--_mt-ripple-color);
+    will-change: transform;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mt-ripple-active::after {
+    animation: ripple 0.6s;
+}
+
+@keyframes ripple {
+    from {
+        opacity: 0.3;
+        transform: scale(var(--_mt-ripple-spread));
+    }
+
+    to {
+        transform: scale(calc(4 * var(--_mt-ripple-spread)));
+        opacity: 0;
+    }
+}

@@ -17,7 +17,7 @@ function Header(props) {
 
   return (
       <>
-      <SearchOverlay/>
+      <SearchOverlay isDarkThemeActive={props.isDarkThemeActive}/>
       <nav className={headerBg}>
         <div className="container">
           <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,10 @@ function Header(props) {
 
           <div className="navbar-collapse collapse justify-content-center" id="navbarDefault">
             <ul className="navbar-nav">
-
+              <ThemeSwitchButton
+                  dark={props.isDarkThemeActive}
+                  changeTheme={props.switchActiveTheme}
+              />
               <li className="nav-item">
                 <a href="https://musicbrainz.org/doc/About" target="_blank" className="nav-link">About</a>
               </li>
@@ -55,14 +58,9 @@ function Header(props) {
                   <a className="dropdown-item ">Logout</a>
                 </div>
               </li>
-
             </ul>
 
           </div>
-          <ThemeSwitchButton
-              dark={props.isDarkThemeActive}
-              changeTheme={props.switchActiveTheme}
-          />
           <div className="d-none d-md-block general-margins">
             <input type="text" name="query" className={"form-control "+ searchBackground} placeholder="Search"/>
           </div>

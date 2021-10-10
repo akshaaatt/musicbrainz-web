@@ -1,8 +1,8 @@
-import React from "react";
-import { Timeline } from 'react-twitter-widgets'
+import React, { Fragment } from "react";
 import './Intro.css';
 import Carousel from "react-multi-carousel";
 import axios from "axios";
+import ChoiceChip from "./ChoiceChip";
 
 const responsive = {
     desktop: {
@@ -36,18 +36,16 @@ class Intro extends React.Component {
     }
 
     render() {
-        let theme, searchBackground;
+        let searchBackground;
         if (this.props.isDarkThemeActive) {
-            theme = "dark";
             searchBackground = "navbar-ok";
         }
         else {
-            theme = "light";
             searchBackground = "";
         }
 
         return (
-            <section id="hero" className="hero d-flex align-items-center">
+            <section id="intro" className="intro d-flex align-items-center">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 d-flex flex-column justify-content-center">
@@ -66,6 +64,20 @@ class Intro extends React.Component {
                                     </button>
                                 </div>
                             </div>
+                            <Fragment>
+                                <ChoiceChip name="size">
+                                    Laptop
+                                </ChoiceChip>
+                                {' '}
+                                <ChoiceChip name="size">
+                                    Phone
+                                </ChoiceChip>
+                                {' '}
+                                <ChoiceChip name="size">
+                                    Other
+                                </ChoiceChip>
+                            </Fragment>
+
                             <Carousel
                                 ssr={false}
                                 ref={el => (this.Carousel = el)}
@@ -110,12 +122,9 @@ class Intro extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 hero-img posts-top d-none d-md-block col-sm-0 " data-aos="zoom-out"
+                        <div className="col-lg-4 intro-img posts-top d-none d-md-block col-sm-0 " data-aos="zoom-out"
                              data-aos-delay="200">
-                            <Timeline
-                                dataSource={{sourceType: "profile", screenName: "musicbrainz"}}
-                                options={{theme: theme, width: "400", height: "600"}}
-                            />
+                            <iframe src="https://blog.metabrainz.org" width="400" height="600"/>
                         </div>
                     </div>
                 </div>
