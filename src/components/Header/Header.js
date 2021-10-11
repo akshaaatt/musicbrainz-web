@@ -62,20 +62,23 @@ function Header(props) {
 
           </div>
           <div className="d-none d-lg-block general-margins">
-            <input type="text" name="query" id="searchInput"
+            <input type="text" name="query" id="searchInputHeader"
                    className={"form-control "+ searchBackground}
                    style={{textTransform: "capitalize"}}
                    onKeyPress={event => {
                      if (event.key === "Enter") {
-                       const query = document.getElementById('searchInput');
+                       const query = document.getElementById('searchInputHeader');
                        console.log(query.value);
                        if(query.value.trim().length<1){
                          return false;
                        }
                        let searchType;
-                       typeCurrent = document.getElementById("type-selector").value;
+                       typeCurrent = document.getElementById("typeHeader").value;
                        if(typeCurrent==='CD Stud'){
                          searchType = "cdstub";
+                       }
+                       else if(typeCurrent === "Documentation"){
+                         searchType = "doc";
                        }
                        else{
                          searchType = typeCurrent.replace(' ','_').toLowerCase()
@@ -88,7 +91,7 @@ function Header(props) {
           </div>
 
           <div className="d-none d-lg-block general-margins">
-            <select id="type-selector" name="type" className={"form-control "+ searchBackground}>
+            <select id="typeHeader" name="type" className={"form-control "+ searchBackground}>
               <option>Artist</option>
               <option>Release</option>
               <option>Recording</option>

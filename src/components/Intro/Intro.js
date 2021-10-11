@@ -90,12 +90,12 @@ class Intro extends React.Component {
                             <div className="row search-margins">
                                 <div className="col-10">
                                     <input type="text" name="query"
-                                           id="searchInput"
+                                           id="searchInputMain"
                                            className={"form-control special-font"+ searchBackground}
                                            style={{textTransform: "capitalize"}}
                                            onKeyPress={event => {
                                                if (event.key === "Enter") {
-                                                   const query = document.getElementById('searchInput');
+                                                   const query = document.getElementById('searchInputMain');
                                                    console.log(query.value);
                                                    if(query.value.trim().length<1){
                                                        return false;
@@ -103,6 +103,9 @@ class Intro extends React.Component {
                                                    let searchType;
                                                    if(typeCurrent==='CD Stud'){
                                                        searchType = "cdstub";
+                                                   }
+                                                   else if(typeCurrent === "Documentation"){
+                                                       searchType = "doc";
                                                    }
                                                    else{
                                                        searchType = typeCurrent.replace(' ','_').toLowerCase()
