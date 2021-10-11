@@ -5,7 +5,7 @@ import ThemeSwitchButton from "../ThemeSwitchButton/ThemeSwitchButton";
 import SearchOverlay from "./SearchOverlay";
 
 function Header(props) {
-  let headerBg, searchBackground;
+  let headerBg, searchBackground, typeCurrent = "Artist";
   if (props.isDarkThemeActive) {
     headerBg = "navbar navbar-default navbar-trans navbar-expand-lg fixed-top navbar-ok";
     searchBackground = "navbar-ok";
@@ -61,11 +61,33 @@ function Header(props) {
             </ul>
 
           </div>
-          <div className="d-none d-md-block general-margins">
-            <input type="text" name="query" className={"form-control "+ searchBackground} placeholder="Search"/>
+          <div className="d-none d-lg-block general-margins">
+            <input type="text" name="query" id="searchInput"
+                   className={"form-control "+ searchBackground}
+                   style={{textTransform: "capitalize"}}
+                   onKeyPress={event => {
+                     if (event.key === "Enter") {
+                       const query = document.getElementById('searchInput');
+                       console.log(query.value);
+                       if(query.value.trim().length<1){
+                         return false;
+                       }
+                       let searchType;
+                       typeCurrent = document.getElementById("type-selector").value;
+                       if(typeCurrent==='CD Stud'){
+                         searchType = "cdstub";
+                       }
+                       else{
+                         searchType = typeCurrent.replace(' ','_').toLowerCase()
+                       }
+                       window.open("https://musicbrainz.org/"+"search?type=" + searchType + "&query=" +query.value, "_newTab");
+                       return false;
+                     }
+                   }}
+                   placeholder="Search"/>
           </div>
 
-          <div className="d-none d-md-block general-margins">
+          <div className="d-none d-lg-block general-margins">
             <select id="type-selector" name="type" className={"form-control "+ searchBackground}>
               <option>Artist</option>
               <option>Release</option>

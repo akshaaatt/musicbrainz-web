@@ -1,7 +1,7 @@
 import React from "react";
-import './TrustedCompanies.css';
+import './Supporters.css';
 
-function TrustedCompanies() {
+function Supporters() {
 
     return (
         <section id="supporters" className="section-with-bg">
@@ -69,4 +69,4 @@ function TrustedCompanies() {
     )
 }
 
-export default TrustedCompanies;
+export default Supporters;

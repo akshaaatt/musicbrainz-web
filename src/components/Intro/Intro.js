@@ -1,4 +1,5 @@
 import React from "react";
+import { Timeline } from 'react-twitter-widgets'
 import './Intro.css';
 import Carousel from "react-multi-carousel";
 import axios from "axios";
@@ -35,12 +36,45 @@ class Intro extends React.Component {
     }
 
     render() {
-        let searchBackground;
+        const chipData = [
+            {key: 0, label: 'Artist'},
+            {key: 1, label: 'Release'},
+            {key: 2, label: 'Recording'},
+            {key: 3, label: 'Label'},
+            {key: 4, label: 'Work'},
+            {key: 5, label: 'Release Group'},
+            {key: 6, label: 'Area'},
+            {key: 7, label: 'Place'},
+            {key: 8, label: 'Annotation'},
+            {key: 9, label: 'CD Stud'},
+            {key: 10, label: 'Editor'},
+            {key: 11, label: 'Tag'},
+            {key: 12, label: 'Instrument'},
+            {key: 13, label: 'Series'},
+            {key: 14, label: 'Event'},
+            {key: 15, label: 'Documentation'},
+        ];
+
+        let theme, searchBackground, typeCurrent = "Artist";
         if (this.props.isDarkThemeActive) {
             searchBackground = "";
+            theme = "dark";
         }
         else {
             searchBackground = "";
+            theme = "light";
+        }
+
+        function onChipClick(type) {
+            const indexPrev = chipData.map(e => e.label).indexOf(typeCurrent);
+            const elementPrev = document.getElementById("type"+indexPrev);
+            elementPrev.className = "chip";
+
+            typeCurrent = type;
+
+            const indexNew = chipData.map(e => e.label).indexOf(type);
+            const elementNew = document.getElementById("type"+indexNew);
+            elementNew.className = "chip chip--active";
         }
 
         return (
@@ -66,7 +100,14 @@ class Intro extends React.Component {
                                                    if(query.value.trim().length<1){
                                                        return false;
                                                    }
-                                                   window.open("https://musicbrainz.org/"+"search?type=" + "artist" + "&query=" +query.value,'_newtab');
+                                                   let searchType;
+                                                   if(typeCurrent==='CD Stud'){
+                                                       searchType = "cdstub";
+                                                   }
+                                                   else{
+                                                       searchType = typeCurrent.replace(' ','_').toLowerCase()
+                                                   }
+                                                   window.open("https://musicbrainz.org/"+"search?type=" + searchType + "&query=" +query.value, "_newTab");
                                                    return false;
                                                }
                                            }}
@@ -79,22 +120,16 @@ class Intro extends React.Component {
                                 </div>
                             </div>
                             <div className="choiceChips">
-                                <div className="chip">Artist</div>
-                                <div className="chip">Release</div>
-                                <div className="chip">Recording</div>
-                                <div className="chip">Label</div>
-                                <div className="chip">Work</div>
-                                <div className="chip">Release Group</div>
-                                <div className="chip">Area</div>
-                                <div className="chip">Place</div>
-                                <div className="chip">Annotation</div>
-                                <div className="chip">CD Stud</div>
-                                <div className="chip">Editor</div>
-                                <div className="chip">Tag</div>
-                                <div className="chip">Instrument</div>
-                                <div className="chip">Series</div>
-                                <div className="chip">Event</div>
-                                <div className="chip">Documentation</div>
+                                {
+                                    chipData.map((data) => {
+                                        if(data.key===0){
+                                            return <div id={"type"+data.key} className="chip chip--active" onClick={() => onChipClick(data.label)}>{data.label}</div>
+                                        }
+                                        return (
+                                            <div id={"type"+data.key} className="chip" onClick={() => onChipClick(data.label)}>{data.label}</div>
+                                        );
+                                    })
+                                }
                             </div>
                             <Carousel
                                 ssr={false}
@@ -133,9 +168,12 @@ class Intro extends React.Component {
                                 }
                             </Carousel>
                         </div>
-                        <div className="col-lg-4 intro-img posts-top d-none d-md-block col-sm-0 " data-aos="zoom-out"
+                        <div className="col-lg-4 hero-img posts-top d-none d-lg-block col-sm-0 " data-aos="zoom-out"
                              data-aos-delay="200">
-                            <iframe src="https://blog.metabrainz.org" width="400" height="600"/>
+                            <Timeline
+                                dataSource={{sourceType: "profile", screenName: "musicbrainz"}}
+                                options={{theme: theme, width: "400", height: "600"}}
+                            />
                         </div>
                     </div>
                 </div>
@@ -143,4 +181,5 @@ class Intro extends React.Component {
         )
     }
 }
+
 export default Intro;

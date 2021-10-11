@@ -7,7 +7,7 @@ import "./colors.css";
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
-import TrustedCompanies from "./TrustedCompanies/TrustedCompanies";
+import Supporters from "./Supporters/Supporters";
 import Intro from "./Intro/Intro";
 import AppDownload from "./AppDownload/AppDownload";
 import About from "./About/About";
@@ -39,7 +39,7 @@ function App() {
             <Facts isDarkThemeActive={darkThemeActive}/>
             <Explore/>
             <Projects isDarkThemeActive={darkThemeActive}/>
-            <TrustedCompanies/>
+            <Supporters/>
             {/*<RecentlyAdded/>*/}
             <FAQs/>
             <AppDownload/>

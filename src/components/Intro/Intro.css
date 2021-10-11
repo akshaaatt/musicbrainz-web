@@ -42,12 +42,8 @@
 }
 
 .choiceChips .chip.chip--active {
-  color: var(--primary-color);
-  background-color: var(--primary-color);
-}
-
-.chips__filter .chip .chip--check {
-  display: none;
+  color: #FFFFFF;
+  background-color: var(--text-color);
 }
 
 .chips__filter .chip.chip--active .chip--check {
