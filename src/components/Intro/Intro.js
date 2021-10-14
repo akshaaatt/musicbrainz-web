@@ -81,10 +81,10 @@ class Intro extends React.Component {
             <section id="intro" className="intro d-flex align-items-center">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-8 d-flex flex-column justify-content-center">
-                            <h1 data-aos="fade-up" style={{marginTop: "20px"}} className="special-font">Open Sourced Music Database</h1>
-                            <h2 data-aos="fade-up" data-aos-delay="400" className="special-font">
-                                Free, online encyclopedia of music information.
+                        <div className="col-lg-9 d-flex flex-column justify-content-center">
+                            <h1 data-aos="fade-up" style={{marginTop: "20px"}}>The Music Database</h1>
+                            <h2 data-aos="fade-up" data-aos-delay="400" >
+                                World's Biggest Open Source Music Database
                             </h2>
 
                             <div className="row search-margins">
@@ -114,7 +114,7 @@ class Intro extends React.Component {
                                                    return false;
                                                }
                                            }}
-                                           placeholder="Search MusicBrainz Data"/>
+                                           placeholder="Search 41,054,421 Entities Data"/>
                                 </div>
                                 <div className="col-2">
                                     <button type="button" className="btn btn-b-n">
@@ -171,7 +171,7 @@ class Intro extends React.Component {
                                 }
                             </Carousel>
                         </div>
-                        <div className="col-lg-4 hero-img posts-top d-none d-lg-block col-sm-0 " data-aos="zoom-out"
+                        <div className="col-lg-3 hero-img posts-top d-none d-lg-block col-sm-0 " data-aos="zoom-out"
                              data-aos-delay="200">
                             <Timeline
                                 dataSource={{sourceType: "profile", screenName: "musicbrainz"}}
