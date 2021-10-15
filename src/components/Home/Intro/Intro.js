@@ -118,6 +118,9 @@ class Intro extends React.Component {
                                 </div>
                                 <div className="col-2">
                                     <button type="button" className="btn btn-b-n">
+                                        <i className="bi bi-search"/>
+                                    </button>
+                                    <button type="button" className="btn btn-b-n">
                                         <i className="bi bi-upc-scan"/>
                                     </button>
                                 </div>

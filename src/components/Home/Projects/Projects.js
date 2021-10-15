@@ -49,9 +49,8 @@ function Projects(props) {
                             <a href="https://picard.musicbrainz.org" target="_blank">Checkout</a>
                         </p>
                         <p>
-                            MusicBrainz Picard is a cross-platform music file tagger.
-                            This User Guide is intended to augment the information provided on the Picard website and to provide an alternate format for the documentation, including a PDF document suitable for printing.
-                            Links to additional information such as scripts, plugins and tutorials are provided when available rather than trying to reproduce the information in this document.
+                            Picard can add metadata tags to your music files, based on information available from the MusicBrainz website.
+                            It can look up the metadata either manually or automatically based on existing information, including artist and song name, disc id (for CDs), and a track’s AcoustID fingerprint and retrieve and embed coverart images from a variety of sources.
                         </p>
                     </div>
                 </div>
@@ -66,9 +65,7 @@ function Projects(props) {
                             <a href="https://acousticbrainz.org" target="_blank">Checkout</a>
                         </p>
                         <p>
-                            The AcousticBrainz project aims to crowd source acoustic information for all music in the world and to make it available to the public. This acoustic information describes the acoustic characteristics of music and includes low-level spectral information and information for genres, moods, keys, scales and much more. The goal of AcousticBrainz is to provide music technology researchers and open source hackers with a massive database of information about music.
-
-                            AcousticBrainz is a joint effort between Music Technology Group at Universitat Pompeu Fabra in Barcelona and the MusicBrainz project.
+                            The AcousticBrainz project aims to crowd source acoustic information for all music in the world and to make it available to the public. This acoustic information describes the acoustic characteristics of music and includes low-level spectral information and information for genres, moods, keys, scales and much more.
                         </p>
                         </div>
                 </div>
@@ -99,10 +96,9 @@ function Projects(props) {
                         <p className="fst-italic">
                             <a href="https://critiquebrainz.org" target="_blank">Checkout</a>
                         </p>
-                        <p>CritiqueBrainz is a repository for Creative Commons licensed music reviews. Here you can read what other people have written about an album or event and write your own review!
-
-                            CritiqueBrainz is based on data from MusicBrainz - open music encyclopedia.
-                            Everyone - including you - can participate and contribute.</p>
+                        <p>
+                            CritiqueBrainz is a repository for Creative Commons licensed music reviews. Here you can read what other people have written about an album or event and write your own review!
+                        </p>
                     </div>
                 </div>
 
@@ -116,7 +112,7 @@ function Projects(props) {
                             <a href="https://bookbrainz.org" target="_blank">Checkout</a>
                         </p>
                         <p>
-                            BookBrainz is a project to create an online database of information about every single book, magazine, journal and other publication ever written. We make all the data that we collect available to the whole world to consume and use as they see fit. Anyone can contribute to BookBrainz, whether through editing our information, helping out with development, or just spreading the word about our project.
+                            BookBrainz is a project to create an online database of information about every single book, magazine, journal and other publication ever written. We make all the data that we collect available to the whole world to consume and use as they see fit.
                         </p>
                     </div>
                 </div>

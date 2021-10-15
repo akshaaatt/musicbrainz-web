@@ -58,7 +58,7 @@ const SearchOverlay = props => {
     return(
         <div className={background}>
             <div className="title-box-d">
-                <h3 className="title-d">Search</h3>
+                <h3 className="title-d">Advanced Search</h3>
             </div>
             <span className="close-box-collapse right-boxed bi bi-x" onClick={remove}/>
             <div className="box-collapse-wrap form">

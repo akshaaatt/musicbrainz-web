@@ -1,8 +1,8 @@
 .navbar-default {
     transition: all .3s ease-in-out;
     background-color: #FFFFFF;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);

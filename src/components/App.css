@@ -273,6 +273,7 @@ a:hover {
     color: #ffffff;
     border-radius: 8px;
     margin-left: 4px;
+    margin-right: 4px;
 }
 
 .btn.btn-b-n:hover {
