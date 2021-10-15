@@ -88,7 +88,7 @@ class Intro extends React.Component {
                             </h2>
 
                             <div className="row search-margins">
-                                <div className="col-10">
+                                <div className="col-8 col-md-10">
                                     <input type="text" name="query"
                                            id="searchInputMain"
                                            className={"form-control special-font"+ searchBackground}
@@ -116,9 +116,9 @@ class Intro extends React.Component {
                                            }}
                                            placeholder="Search 41,054,421 Entities Data"/>
                                 </div>
-                                <div className="col-2">
+                                <div className="col-4 col-md-2">
                                     <button type="button" className="btn btn-b-n">
-                                        <i className="bi bi-search"/>
+                                        <i className="fab fa-searchengin"/>
                                     </button>
                                     <button type="button" className="btn btn-b-n">
                                         <i className="bi bi-upc-scan"/>
