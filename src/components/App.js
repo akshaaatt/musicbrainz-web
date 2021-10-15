@@ -4,17 +4,17 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "react-multi-carousel/lib/styles.css";
 import "./colors.css";
-import Header from './Header/Header';
-import Footer from './Footer/Footer';
-import ScrollToTop from "./ScrollToTop/ScrollToTop";
-import Supporters from "./Supporters/Supporters";
-import Intro from "./Intro/Intro";
-import AppDownload from "./AppDownload/AppDownload";
-import About from "./About/About";
-import Facts from "./Facts/Facts";
-import Explore from "./Explore/Explore";
-import Projects from "./Projects/Projects";
-import FAQs from "./FAQs/FAQs";
+import Header from './Home/Header/Header';
+import Footer from './Home/Footer/Footer';
+import ScrollToTop from "./Home/ScrollToTop/ScrollToTop";
+import Supporters from "./Home/Supporters/Supporters";
+import Intro from "./Home/Intro/Intro";
+import AppDownload from "./Home/AppDownload/AppDownload";
+import About from "./Home/About/About";
+import Facts from "./Home/Facts/Facts";
+import Explore from "./Home/Explore/Explore";
+import Projects from "./Home/Projects/Projects";
+import FAQs from "./Home/FAQs/FAQs";
 
 function App() {
     let [darkThemeActive, setDarkThemeActive] = useState(false);
@@ -37,11 +37,11 @@ function App() {
             <Intro isDarkThemeActive={darkThemeActive}/>
             <About/>
             <Facts isDarkThemeActive={darkThemeActive}/>
-            <Explore/>
             <Projects isDarkThemeActive={darkThemeActive}/>
+            <Explore/>
             <Supporters/>
             {/*<RecentlyAdded/>*/}
-            <FAQs/>
+            {/*<FAQs/>*/}
             <AppDownload/>
             <Footer isDarkThemeActive={darkThemeActive} />
             <ScrollToTop

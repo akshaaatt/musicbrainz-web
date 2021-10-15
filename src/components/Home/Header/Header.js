@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import "../App.css";
+import "../../App.css";
 import ThemeSwitchButton from "../ThemeSwitchButton/ThemeSwitchButton";
 import SearchOverlay from "./SearchOverlay";
 

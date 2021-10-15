@@ -7,7 +7,7 @@ function Explore() {
             <div className="container">
 
                 <div className="section-title">
-                    <h2 data-aos="fade-in">Explore MusicBrainz</h2>
+                    <h2 data-aos="fade-in">Understand MusicBrainz</h2>
                 </div>
 
                 <div className="row">
