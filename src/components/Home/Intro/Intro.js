@@ -193,12 +193,37 @@ class Intro extends React.Component {
                                 }
                             </Carousel>
                         </div>
-                        <div className="col-lg-3 hero-img posts-top d-none d-lg-block col-sm-0 " data-aos="zoom-out"
-                             data-aos-delay="200">
-                            <Timeline
-                                dataSource={{sourceType: "profile", screenName: "musicbrainz"}}
-                                options={{theme: theme, width: "400", height: "600"}}
-                            />
+                        <div className="col-lg-3 hero-img posts-top d-none d-lg-block col-sm-0">
+                            <div className="card">
+                                <img className="card-img-top" src="assets/img/blogs.jpg" alt="Blogs Logo"/>
+                                    <div className="card-body">
+                                        <h5 className="card-title text-center"><span className="color-purple">Blogs</span> & <span className="color-orange">Updates</span></h5>
+                                    </div>
+                                    <ul className="list-group list-group-flush">
+                                        <li className="list-group-item"><a href="https://blog.metabrainz.org/2021/10/07/picard-2-7-beta-1/" target="_blank" className="card-link">Picard 2.7 Beta 1</a></li>
+                                        <li className="list-group-item"><a href="https://blog.metabrainz.org/2021/10/06/picard-2-6-4-released/" className="card-link" target="_blank">Picard 2.6.4 released</a></li>
+                                        <li className="list-group-item"><a href="https://blog.metabrainz.org/2021/10/04/musicbrainz-server-update-2021-10-04/" className="card-link" target="_blank">MusicBrainz Server update, 2021-10-04</a></li>
+                                        <li className="list-group-item"><a href="https://blog.metabrainz.org/2021/09/20/musicbrainz-server-update-2021-09-20/" className="card-link" target="_blank">MusicBrainz Server update, 2021-09-20</a></li>
+                                        <li className="list-group-item"><a href="https://blog.metabrainz.org/2021/09/06/musicbrainz-server-update-2021-09-06/" className="card-link" target="_blank">MusicBrainz Server update, 2021-09-06</a></li>
+                                        <li className="list-group-item"><a href="https://blog.metabrainz.org/2021/09/01/acoustic-similarity-in-acousticbrainz/" className="card-link" target="_blank">Acoustic similarity in AcousticBrainz</a></li>
+                                        <li className="list-group-item"><a href="https://blog.metabrainz.org/2021/08/23/gsoc-2021-pin-recordings-and-critiquebrainz-integration-in-listenbrainz/" className="card-link" target="_blank">GSoC 2021: Pin Recordings and CritiqueBrainz Integration in ListenBrainz</a></li>
+                                    </ul>
+                                <div className="card-body align-items-center d-flex justify-content-center">
+                                    <a href="https://twitter.com/MusicBrainz" target="_blank" className="card-link"> <i className="fab fa-twitter"/></a>
+                                    <a href="https://blog.metabrainz.org" className="card-link" target="_blank"> <i className="bi bi-rss-fill"/></a>
+                                    <a href="https://www.facebook.com/MusicBrainz-12390437194/" className="card-link" target="_blank"> <i className="fab fa-facebook"/></a>
+                                    <a href="https://www.facebook.com/MusicBrainz-12390437194/" className="card-link" target="_blank">Community Forum</a>
+                                </div>
+                            </div>
+                            {/*<iframe src="https://blog.metabrainz.org"*/}
+                            {/*        name="blogs"*/}
+                            {/*        height="300"*/}
+                            {/*        title="MetaBrainz Blogs"/>*/}
+
+                            {/*<Timeline*/}
+                            {/*    dataSource={{sourceType: "profile", screenName: "musicbrainz"}}*/}
+                            {/*    options={{theme: theme, height: "300"}}*/}
+                            {/*/>*/}
                         </div>
                     </div>
                 </div>

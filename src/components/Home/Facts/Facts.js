@@ -19,7 +19,7 @@ function Facts(props) {
                         <div className="count-box">
                             <i className="bi bi-music-note-list"/>
                             <div>
-                                <span>1.881 M</span>
+                                <span>1.88 M</span>
                                 <p>Artists</p>
                             </div>
                         </div>
@@ -29,7 +29,7 @@ function Facts(props) {
                         <div className="count-box">
                             <i className="bi bi-journal-richtext"/>
                             <div>
-                                <span>3.003 M</span>
+                                <span>3.00 M</span>
                                 <p>Releases</p>
                             </div>
                         </div>
@@ -39,7 +39,7 @@ function Facts(props) {
                         <div className="count-box">
                             <i className="bi bi-headset"/>
                             <div>
-                                <span>35.196 M</span>
+                                <span>35.20 M</span>
                                 <p>Tracks</p>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ function Facts(props) {
                         <div className="count-box">
                             <i className="bi bi-people"/>
                             <div>
-                                <span>2.177 M</span>
+                                <span>2.18 M</span>
                                 <p>Editors</p>
                             </div>
                         </div>
