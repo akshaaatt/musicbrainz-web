@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useCallback, useState} from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -14,44 +14,43 @@ import About from "./Home/About/About";
 import Facts from "./Home/Facts/Facts";
 import Explore from "./Home/Explore/Explore";
 import Projects from "./Home/Projects/Projects";
-import FAQs from "./Home/FAQs/FAQs";
+import ThemeContext, { DARK_THEME, LIGHT_THEME, DarkMode } from './Utils/Themes/themes';
 
 function App() {
-    let [darkThemeActive, setDarkThemeActive] = useState(false);
+    const [ dark, setDark ] = useState(DarkMode.getSetting);
+    const theme = dark ? DARK_THEME : LIGHT_THEME;
 
-    function switchActiveTheme() {
-        if (darkThemeActive) {
-            setDarkThemeActive(false);
-            document.querySelector("#root").style.backgroundColor = "white";
-            document.documentElement.className = 'theme-light';
-        } else {
-            setDarkThemeActive(true);
-            document.querySelector("#root").style.backgroundColor = "#243133";
-            document.documentElement.className = 'theme-dark';
-        }
-    }
+    const toggleDarkMode = useCallback(function () {
+        setDark(prevState => {
+            const newState = !prevState;
+            DarkMode.updateSetting(newState);
+            return newState;
+        });
+    }, []);
 
     return (
-        <div>
-            <Header isDarkThemeActive={darkThemeActive} switchActiveTheme={switchActiveTheme}/>
-            <Intro isDarkThemeActive={darkThemeActive}/>
-            <About/>
-            <Facts isDarkThemeActive={darkThemeActive}/>
-            <Projects isDarkThemeActive={darkThemeActive}/>
-            <Explore/>
-            <Supporters/>
-            {/*<RecentlyAdded/>*/}
-            {/*<FAQs/>*/}
-            <AppDownload/>
-            <Footer isDarkThemeActive={darkThemeActive} />
-            <ScrollToTop
-                icon="bi bi-caret-up-fill"
-                backgroundColor = "#EB743B"
-                position={{ bottom: "12%", right: "0%" }}
-                hover={{ backgroundColor: "purple", opacity: "0.95" }}
-                margin="24px"
-            />
-        </div>
+        <ThemeContext.Provider value={theme}>
+            <div>
+                <Header isDarkThemeActive={dark} switchActiveTheme={toggleDarkMode}/>
+                <Intro isDarkThemeActive={dark}/>
+                <About/>
+                <Facts isDarkThemeActive={dark}/>
+                <Projects isDarkThemeActive={dark}/>
+                <Explore/>
+                <Supporters/>
+                {/*<RecentlyAdded/>*/}
+                {/*<FAQs/>*/}
+                <AppDownload/>
+                <Footer isDarkThemeActive={dark} />
+                <ScrollToTop
+                    icon="bi bi-caret-up-fill"
+                    backgroundColor = "#EB743B"
+                    position={{ bottom: "12%", right: "0%" }}
+                    hover={{ backgroundColor: "purple", opacity: "0.95" }}
+                    margin="24px"
+                />
+            </div>
+        </ThemeContext.Provider>
     );
 }
 

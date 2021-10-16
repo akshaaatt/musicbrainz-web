@@ -33,8 +33,18 @@ function Header(props) {
                   dark={props.isDarkThemeActive}
                   changeTheme={props.switchActiveTheme}
               />
-              <li className="nav-item">
-                <a href="https://musicbrainz.org/doc/About" target="_blank" className="nav-link">About</a>
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
+                <div className="dropdown-menu">
+                  <a className="dropdown-item ">Deutsch</a>
+                  <a className="dropdown-item ">English</a>
+                  <a className="dropdown-item ">Français</a>
+                  <a className="dropdown-item ">Italiano</a>
+                  <a className="dropdown-item ">Nederlands</a>
+                  <a className="dropdown-item ">(Reset Language)</a>
+                  <div className="dropdown-divider"/>
+                  <a className="dropdown-item" >Help Translate</a>
+                </div>
               </li>
 
               <li className="nav-item">
@@ -123,6 +133,23 @@ function Header(props) {
 
 const attach = e => {
   e.preventDefault()
+  const query = document.getElementById('searchInputHeader');
+
+  if(query.value.length>1){
+    let searchType;
+    let typeCurrent = document.getElementById("typeHeader").value;
+    if(typeCurrent==='CD Stud'){
+      searchType = "cdstub";
+    }
+    else if(typeCurrent === "Documentation"){
+      searchType = "doc";
+    }
+    else{
+      searchType = typeCurrent.replace(' ','_').toLowerCase()
+    }
+    window.open("https://musicbrainz.org/"+"search?type=" + searchType + "&query=" +query.value, "_newTab");
+    return;
+  }
   document.body.classList.add('box-collapse-open')
   document.body.classList.remove('box-collapse-closed')
 }

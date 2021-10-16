@@ -77,6 +77,25 @@ class Intro extends React.Component {
             elementNew.className = "chip chip--active";
         }
 
+        function searchButtonClick() {
+            const query = document.getElementById('searchInputMain');
+            console.log(query.value);
+            if(query.value.trim().length<1){
+                return;
+            }
+            let searchType;
+            if(typeCurrent==='CD Stud'){
+                searchType = "cdstub";
+            }
+            else if(typeCurrent === "Documentation"){
+                searchType = "doc";
+            }
+            else{
+                searchType = typeCurrent.replace(' ','_').toLowerCase()
+            }
+            window.open("https://musicbrainz.org/"+"search?type=" + searchType + "&query=" +query.value, "_newTab");
+        }
+
         return (
             <section id="intro" className="intro d-flex align-items-center">
                 <div className="container">
@@ -114,10 +133,10 @@ class Intro extends React.Component {
                                                    return false;
                                                }
                                            }}
-                                           placeholder="Search 41,054,421 Entities Data"/>
+                                           placeholder="Search 41,054,421 Entities"/>
                                 </div>
                                 <div className="col-4 col-md-2">
-                                    <button type="button" className="btn btn-b-n">
+                                    <button type="button" className="btn btn-b-n" onClick={searchButtonClick}>
                                         <i className="fab fa-searchengin"/>
                                     </button>
                                     <button type="button" className="btn btn-b-n">

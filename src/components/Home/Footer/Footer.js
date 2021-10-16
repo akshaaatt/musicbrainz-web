@@ -80,7 +80,7 @@ const Footer = props => {
               <div className="col-sm-12 col-md-3 section-md-t3">
                 <div className="widget-a">
                   <div className="w-header-a">
-                    <h3 className="w-title-a text-brand">Explore Us</h3>
+                    <h3 className="w-title-a text-brand">Fellow Projects</h3>
                   </div>
                   <div className="w-body-a">
                     <ul className="list-unstyled">

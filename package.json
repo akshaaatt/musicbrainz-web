@@ -15,7 +15,8 @@
     "react-router-dom": "^5.2.1",
     "react-scripts": "4.0.3",
     "react-twitter-widgets": "^1.10.0",
-    "react-webcam": "^6.0.0",
+    "jsqr": "latest",
+    "worker-loader": "latest",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

@@ -11,7 +11,7 @@ function AppDownload() {
                         <img src="assets/img/music.jpg" className="img-fluid" alt=""/>
                     </div>
                     <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-                        <h3 className="navbar-brand text-brand"><span className="color-purple">What is Music</span><span
+                        <h3 className="navbar-brand text-brand">What is <span className="color-purple">Music</span><span
                             className="color-orange">Brainz</span>?</h3>
                         <p className="fst-italic">
                             MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.
