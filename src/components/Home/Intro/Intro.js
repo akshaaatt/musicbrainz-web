@@ -108,7 +108,7 @@ class Intro extends React.Component {
 
                             <div className="row search-margins">
                                 <div className="col-8 col-md-10">
-                                    <input type="text" name="query"
+                                    <input type="search" name="query"
                                            id="searchInputMain"
                                            className={"form-control special-font"+ searchBackground}
                                            style={{textTransform: "capitalize"}}

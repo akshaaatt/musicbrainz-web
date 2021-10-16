@@ -67,7 +67,7 @@ const SearchOverlay = props => {
                         <div className="col-md-12 mb-2">
                             <div className="form-group">
                                 <label className="pb-2" htmlFor="Type">Keywords</label>
-                                <input id="searchInput" type="text" style={{textTransform: "capitalize"}}
+                                <input id="searchInput" type="search" style={{textTransform: "capitalize"}}
                                        className="form-control form-control-lg form-control-a" placeholder="Query"/>
                             </div>
                         </div>

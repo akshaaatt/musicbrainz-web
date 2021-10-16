@@ -72,7 +72,7 @@ function Header(props) {
 
           </div>
           <div className="d-none d-lg-block general-margins">
-            <input type="text" name="query" id="searchInputHeader"
+            <input type="search" name="query" id="searchInputHeader"
                    className={"form-control "+ searchBackground}
                    style={{textTransform: "capitalize"}}
                    onKeyPress={event => {
