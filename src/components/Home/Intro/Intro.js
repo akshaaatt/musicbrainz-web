@@ -1,5 +1,4 @@
 import React from "react";
-import { Timeline } from 'react-twitter-widgets'
 import './Intro.css';
 import Carousel from "react-multi-carousel";
 import axios from "axios";
@@ -211,8 +210,7 @@ class Intro extends React.Component {
                                 <div className="card-body align-items-center d-flex justify-content-center">
                                     <a href="https://twitter.com/MusicBrainz" target="_blank" className="card-link"> <i className="fab fa-twitter"/></a>
                                     <a href="https://blog.metabrainz.org" className="card-link" target="_blank"> <i className="bi bi-rss-fill"/></a>
-                                    <a href="https://www.facebook.com/MusicBrainz-12390437194/" className="card-link" target="_blank"> <i className="fab fa-facebook"/></a>
-                                    <a href="https://www.facebook.com/MusicBrainz-12390437194/" className="card-link" target="_blank">Community Forum</a>
+                                    <a href="https://community.metabrainz.org" className="card-link" target="_blank">Community Forum</a>
                                 </div>
                             </div>
                             {/*<iframe src="https://blog.metabrainz.org"*/}

@@ -24,7 +24,7 @@ function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5" data-aos="fade-right">
-                        <img src="assets/img/meb-logos/listenbrainz.svg" className="img-fluid" alt=""/>
+                        <a href="https://listenbrainz.org" target="_blank"><img src="assets/img/meb-logos/listenbrainz.svg" className="img-fluid" alt=""/></a>
                     </div>
                     <div className="col-md-7 pt-4" data-aos="fade-left">
                         <h3>An open record of user listening habits</h3>
@@ -41,7 +41,7 @@ function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 order-1 order-md-2" data-aos="fade-left">
-                        <img src="assets/img/meb-logos/picard.svg" style={{maxHeight: "150px"}} className="img-fluid" alt=""/>
+                        <a href="https://picard.musicbrainz.org" target="_blank"><img src="assets/img/meb-logos/picard.svg" className="img-fluid" alt=""/></a>
                     </div>
                     <div className="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
                         <h3>A cross-platform music tagger</h3>
@@ -57,7 +57,7 @@ function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 " data-aos="fade-right">
-                        <img src="assets/img/meb-logos/acousticbrainz.svg" className="img-fluid" alt=""/>
+                        <a href="https://acousticbrainz.org" target="_blank"><img src="assets/img/meb-logos/acousticbrainz.svg" className="img-fluid" alt=""/></a>
                     </div>
                     <div className="col-md-7 pt-5" data-aos="fade-left">
                         <h3>A crowdsourced collection of acoustic information</h3>
@@ -72,7 +72,7 @@ function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 order-1 order-md-2" data-aos="fade-left">
-                        <img src="assets/img/meb-logos/coverartarchive.svg" className="img-fluid" alt=""/>
+                        <a href="https://coverartarchive.org" target="_blank"><img src="assets/img/meb-logos/coverartarchive.svg" className="img-fluid" alt=""/></a>
                     </div>
                     <div className="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
                         <h3>A repository of music cover art that is freely and easily accessible</h3>
@@ -89,12 +89,12 @@ function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5" data-aos="fade-right">
-                        <img src="assets/img/meb-logos/critiquebrainz.svg" className="img-fluid" alt=""/>
+                        <a href="https://critiquebrainz.org" target="_blank"><img src="assets/img/meb-logos/critiquebrainz.svg" className="img-fluid" alt=""/></a>
                     </div>
                     <div className="col-md-7 pt-5" data-aos="fade-left">
                         <h3>A repository for Creative Commons licensed music reviews</h3>
                         <p className="fst-italic">
-                            <a href="https://critiquebrainz.org" target="_blank">Checkout</a>
+                            <a >Checkout</a>
                         </p>
                         <p>
                             CritiqueBrainz is a repository for Creative Commons licensed music reviews. Here you can read what other people have written about an album or event and write your own review!
@@ -104,7 +104,7 @@ function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 order-1 order-md-2" data-aos="fade-left">
-                        <img src="assets/img/meb-logos/bookbrainz.svg" className="img-fluid" alt=""/>
+                        <a href="https://bookbrainz.org" target="_blank"><img src="assets/img/meb-logos/bookbrainz.svg" className="img-fluid" alt=""/></a>
                     </div>
                     <div className="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
                         <h3>An open encyclopedia which contains information about published literature</h3>

@@ -10,7 +10,7 @@ function Facts(props) {
     }
 
     return(
-        <section id="counts" className={background}>
+        <section id="counts" className="counts">
             <div className="container" data-aos="fade-up">
 
                 <div className="row gy-4">
