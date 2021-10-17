@@ -33,7 +33,7 @@ function App() {
             <div>
                 <Header isDarkThemeActive={dark} switchActiveTheme={toggleDarkMode}/>
                 <Intro isDarkThemeActive={dark}/>
-                <About/>
+                <About isDarkThemeActive={dark}/>
                 <Facts isDarkThemeActive={dark}/>
                 <Projects isDarkThemeActive={dark}/>
                 <Explore/>

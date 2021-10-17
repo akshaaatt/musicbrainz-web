@@ -1,3 +1,23 @@
+.theme-light {
+  --box-color: white;
+  --color: black;
+  --background-color: white;
+  --primary-color: orange;
+  --secondary-color: purple;
+  --title-color: #213b52;
+  --shadow: rgba(1, 41, 112, 0.08);
+}
+
+.theme-dark  {
+  --box-color: #243133;
+  --color: white;
+  --background-color: black;
+  --primary-color: purple;
+  --secondary-color: orange;
+  --title-color: #f3f3f3;
+  --shadow: rgba(1, 21, 92, 0.18);
+}
+
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -25,7 +45,7 @@ section {
   padding-bottom: 20px;
   position: relative;
   font-family: "Poppins", sans-serif;
-  color: #213b52;
+  color: var(--title-color);
 }
 .section-title h2::before {
   content: "";

@@ -57,11 +57,11 @@ class Intro extends React.Component {
         let theme, searchBackground, typeCurrent = "Artist";
         if (this.props.isDarkThemeActive) {
             searchBackground = "";
-            theme = "dark";
+            theme = "theme-dark";
         }
         else {
             searchBackground = "";
-            theme = "light";
+            theme = "theme-light";
         }
 
         function onChipClick(type) {
@@ -96,7 +96,7 @@ class Intro extends React.Component {
         }
 
         return (
-            <section id="intro" className="intro d-flex align-items-center">
+            <section id="intro" className={"intro d-flex align-items-center "+theme}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-9 d-flex flex-column justify-content-center">
@@ -192,20 +192,20 @@ class Intro extends React.Component {
                                 }
                             </Carousel>
                         </div>
-                        <div className="col-lg-3 hero-img posts-top d-none d-lg-block col-sm-0">
-                            <div className="card">
+                        <div className={"col-lg-3 d-none d-lg-block"}>
+                            <div className={"card"}>
                                 <img className="card-img-top" src="assets/img/blogs.jpg" alt="Blogs Logo"/>
                                     <div className="card-body">
                                         <h5 className="card-title text-center"><span className="color-purple">Blogs</span> & <span className="color-orange">Updates</span></h5>
                                     </div>
                                     <ul className="list-group list-group-flush">
-                                        <li className="list-group-item"><a href="https://blog.metabrainz.org/2021/10/07/picard-2-7-beta-1/" target="_blank" className="card-link">Picard 2.7 Beta 1</a></li>
-                                        <li className="list-group-item"><a href="https://blog.metabrainz.org/2021/10/06/picard-2-6-4-released/" className="card-link" target="_blank">Picard 2.6.4 released</a></li>
-                                        <li className="list-group-item"><a href="https://blog.metabrainz.org/2021/10/04/musicbrainz-server-update-2021-10-04/" className="card-link" target="_blank">MusicBrainz Server update, 2021-10-04</a></li>
-                                        <li className="list-group-item"><a href="https://blog.metabrainz.org/2021/09/20/musicbrainz-server-update-2021-09-20/" className="card-link" target="_blank">MusicBrainz Server update, 2021-09-20</a></li>
-                                        <li className="list-group-item"><a href="https://blog.metabrainz.org/2021/09/06/musicbrainz-server-update-2021-09-06/" className="card-link" target="_blank">MusicBrainz Server update, 2021-09-06</a></li>
-                                        <li className="list-group-item"><a href="https://blog.metabrainz.org/2021/09/01/acoustic-similarity-in-acousticbrainz/" className="card-link" target="_blank">Acoustic similarity in AcousticBrainz</a></li>
-                                        <li className="list-group-item"><a href="https://blog.metabrainz.org/2021/08/23/gsoc-2021-pin-recordings-and-critiquebrainz-integration-in-listenbrainz/" className="card-link" target="_blank">GSoC 2021: Pin Recordings and CritiqueBrainz Integration in ListenBrainz</a></li>
+                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/10/07/picard-2-7-beta-1/" target="_blank" className="card-link">Picard 2.7 Beta 1</a></li>
+                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/10/06/picard-2-6-4-released/" className="card-link" target="_blank">Picard 2.6.4 released</a></li>
+                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/10/04/musicbrainz-server-update-2021-10-04/" className="card-link" target="_blank">MusicBrainz Server update, 2021-10-04</a></li>
+                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/09/20/musicbrainz-server-update-2021-09-20/" className="card-link" target="_blank">MusicBrainz Server update, 2021-09-20</a></li>
+                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/09/06/musicbrainz-server-update-2021-09-06/" className="card-link" target="_blank">MusicBrainz Server update, 2021-09-06</a></li>
+                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/09/01/acoustic-similarity-in-acousticbrainz/" className="card-link" target="_blank">Acoustic similarity in AcousticBrainz</a></li>
+                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/08/23/gsoc-2021-pin-recordings-and-critiquebrainz-integration-in-listenbrainz/" className="card-link" target="_blank">GSoC 2021: Pin Recordings and CritiqueBrainz Integration in ListenBrainz</a></li>
                                     </ul>
                                 <div className="card-body align-items-center d-flex justify-content-center">
                                     <a href="https://twitter.com/MusicBrainz" target="_blank" className="card-link"> <i className="fab fa-twitter"/></a>
@@ -213,15 +213,6 @@ class Intro extends React.Component {
                                     <a href="https://community.metabrainz.org" className="card-link" target="_blank">Community Forum</a>
                                 </div>
                             </div>
-                            {/*<iframe src="https://blog.metabrainz.org"*/}
-                            {/*        name="blogs"*/}
-                            {/*        height="300"*/}
-                            {/*        title="MetaBrainz Blogs"/>*/}
-
-                            {/*<Timeline*/}
-                            {/*    dataSource={{sourceType: "profile", screenName: "musicbrainz"}}*/}
-                            {/*    options={{theme: theme, height: "300"}}*/}
-                            {/*/>*/}
                         </div>
                     </div>
                 </div>

@@ -1,34 +1,51 @@
+.theme-light {
+  --box-color: white;
+  --color: black;
+  --background-color: white;
+  --primary-color: orange;
+  --secondary-color: purple;
+  --shadow: rgba(1, 41, 112, 0.08);
+}
+
+.theme-dark  {
+  --box-color: #243133;
+  --color: white;
+  --background-color: black;
+  --primary-color: purple;
+  --secondary-color: orange;
+  --shadow: rgba(1, 21, 92, 0.18);
+}
+
 .counts {
   padding: 10px 0 60px;
-  background: #ffffff;
+  background: var(--background-color);
 }
-.counts-dark {
-  padding: 10px 0 60px;
-  background: #ffffff;
-}
+
 .counts .count-box {
   display: flex;
   align-items: center;
   padding: 30px;
   width: 100%;
-  background: #ffffff;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  background: var(--box-color);
+  box-shadow: 0 0 30px var(--shadow);
 }
+
 .counts .count-box i {
   font-size: 42px;
   line-height: 0;
   margin-right: 20px;
-  color: orange;
+  color: var(--primary-color);
 }
 .counts .count-box span {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: purple;
+  color: var(--secondary-color);
 }
 .counts .count-box p {
   padding: 0;
   margin: 0;
   font-family: "Nunito", sans-serif;
   font-size: 14px;
+  color: var(--color);
 }

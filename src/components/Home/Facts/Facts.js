@@ -2,15 +2,15 @@ import React from "react";
 import './Facts.css';
 
 function Facts(props) {
-    let background;
+    let theme;
     if (props.isDarkThemeActive) {
-        background = "counts-dark";
+        theme = "counts theme-dark";
     } else {
-        background = "counts";
+        theme = "counts theme-light";
     }
 
     return(
-        <section id="counts" className="counts">
+        <section id="counts" className={theme}>
             <div className="container" data-aos="fade-up">
 
                 <div className="row gy-4">

@@ -1,9 +1,15 @@
 import React from "react";
 import './About.css';
 
-function AppDownload() {
+function About(props) {
+    let theme;
+    if (props.isDarkThemeActive) {
+        theme = "about theme-dark";
+    } else {
+        theme = "about theme-light";
+    }
     return(
-        <section id="about" className="about">
+        <section id="about" className={theme}>
             <div className="container">
 
                 <div className="row">
@@ -36,4 +42,4 @@ function AppDownload() {
         </section>
     )
 }
-export default AppDownload;
+export default About;

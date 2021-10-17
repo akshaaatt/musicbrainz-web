@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
 
-:root {
-   --primary-color: #ff502f;
-   --secondary-color: #5bd1d7;
-   --text-color: #004d61;
-   --gray-light: #f3f3f3;
+.theme-light {
+  --box-color: white;
+  --color: black;
+  --background-color: white;
+  --primary-color: orange;
+  --secondary-color: purple;
+  --shadow: rgba(1, 41, 112, 0.08);
 }
 
+.theme-dark  {
+  --box-color: #243133;
+  --color: white;
+  --background-color: black;
+  --primary-color: purple;
+  --secondary-color: orange;
+  --shadow: rgba(1, 21, 92, 0.18);
+}
 .special-font {
   font-family: 'Comfortaa', sans-serif;
   color: #ffffff;
@@ -15,12 +25,12 @@
 
 .chip {
   padding: 0 12px;
-  background-color: var(--gray-light);
+  background-color: var(--shadow);
   border-radius: 100px;
   display: inline-flex;
   font-family: 'Comfortaa', sans-serif;
   margin: 4px;
-  color: rgba(0, 0, 0, .87);
+  color: var(--color);
   align-items: center;
   height: 32px;
   font-size: 14px;
@@ -44,8 +54,8 @@
 }
 
 .choiceChips .chip.chip--active {
-  color: #FFFFFF;
-  background-color: var(--text-color);
+  color: var(--color);
+  background-color: var(--background-color);
 }
 
 .chips__filter .chip.chip--active .chip--check {
@@ -54,15 +64,14 @@
 .intro {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to right, purple 0%, orange 100%);
+  background: linear-gradient(to right, var(--secondary-color) 0%, var(--primary-color) 100%);
   margin-top: 40px;
-  margin-bottom: 40px;
 }
 .intro h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  color: white;
+  color: var(--color);
 }
 .intro h2 {
   color: #f3f3f3;
@@ -70,16 +79,6 @@
   font-size: 26px;
 }
 
-.intro .btn-get-started {
-  margin-top: 30px;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 4px;
-  transition: 0.5s;
-  color: #fff;
-  background: darkorange;
-  box-shadow: 0 5px 30px rgba(65, 84, 241, 0.4);
-}
 .intro .btn-get-started span {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
