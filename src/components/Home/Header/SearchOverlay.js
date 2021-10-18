@@ -1,12 +1,12 @@
 import './SearchOverlay.css';
 
 const SearchOverlay = props => {
-    let background, typeCurrent;
+    let theme, typeCurrent;
     if (props.isDarkThemeActive) {
-        background = "box-collapse";
+        theme = "theme-dark";
     }
     else {
-        background = "box-collapse";
+        theme = "theme-light";
     }
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -56,7 +56,7 @@ const SearchOverlay = props => {
         return false;
     }
     return(
-        <div className={background}>
+        <div className={"box-collapse " + theme}>
             <div className="title-box-d">
                 <h3 className="title-d">Advanced Search</h3>
             </div>

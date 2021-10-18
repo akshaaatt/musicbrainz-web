@@ -3,7 +3,7 @@
     --color: black;
     --main-bg: white;
     --background-color: #f3f3f3;
-    --primary-color: darkorange;
+    --primary-color: #eb743b;
     --secondary-color: purple;
     --title-color: #213b52;
     --shadow: rgba(1, 41, 112, 0.08);
@@ -13,6 +13,9 @@
     --selected-bg: #213b52;
     --footer-bg: #f3f3f3;
     --footer-sec-color: #808080;
+    --supporters-card-bg: rgba(255, 255, 255, 0.5);
+    --filter: grayscale(80);
+    --btn-dark: black;
 }
 
 .theme-dark  {
@@ -30,4 +33,7 @@
     --selected-bg: #15DED8;
     --footer-bg: #243133;
     --footer-sec-color: #90A4AE;
+    --supporters-card-bg: #808080;
+    --filter: none;
+    --btn-dark: #243133;
 }

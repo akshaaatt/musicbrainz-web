@@ -2,6 +2,7 @@
   background: var(--footer-bg);
   color: var(--color);
   padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 .section-footer ul {
@@ -19,3 +20,8 @@
   text-align: center;
   padding-top: 40px;
 }
+.section-line{
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+

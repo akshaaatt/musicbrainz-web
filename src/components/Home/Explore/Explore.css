@@ -3,7 +3,6 @@ section {
   overflow: hidden;
   background: var(--background-color);
 }
-
 .section-title {
   text-align: center;
   padding-bottom: 30px;

@@ -99,7 +99,7 @@ function Header(props) {
           </div>
 
           <div className="d-none d-lg-block general-margins">
-            <select id="typeHeader" name="type" className={"form-control"}>
+            <select id="typeHeader" name="type" className="form-control">
               <option>Artist</option>
               <option>Release</option>
               <option>Recording</option>
