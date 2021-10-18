@@ -12,7 +12,7 @@
   display: inline-flex;
   font-family: 'Comfortaa', sans-serif;
   margin: 4px;
-  color: black;
+  color: var(--color);
   align-items: center;
   height: 32px;
   font-size: 14px;
@@ -29,8 +29,8 @@
 }
 
 .choiceChips .chip.chip--active {
-  color: white;
-  background-color: #243133;
+  color: var(--background-color);
+  background-color: var(--selected-bg);
 }
 
 .chips__filter .chip.chip--active .chip--check {
@@ -39,7 +39,7 @@
 .intro {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to right, var(--secondary-color) 0%, var(--primary-color) 100%);
+  background: linear-gradient(to right, var(--intro-bg-first) 0%, var(--intro-bg-second) 100%);
   margin-top: 40px;
 }
 .intro h1 {
@@ -70,6 +70,15 @@
 }
 .intro .intro-img {
   text-align: right;
+}
+
+.intro .card{
+  background: var(--main-bg);
+  color: var(--color);
+}
+.intro .list-group-item{
+  background: var(--main-bg);
+  color: var(--color);
 }
 
 @media (max-width: 991px) {

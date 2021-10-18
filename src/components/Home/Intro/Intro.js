@@ -53,13 +53,11 @@ class Intro extends React.Component {
             {key: 15, label: 'Documentation'},
         ];
 
-        let theme, searchBackground, typeCurrent = "Artist";
+        let theme, typeCurrent = "Artist";
         if (this.props.isDarkThemeActive) {
-            searchBackground = "";
             theme = "theme-dark";
         }
         else {
-            searchBackground = "";
             theme = "theme-light";
         }
 
@@ -108,7 +106,7 @@ class Intro extends React.Component {
                                 <div className="col-8 col-md-10">
                                     <input type="search" name="query"
                                            id="searchInputMain"
-                                           className={"form-control special-font"+ searchBackground}
+                                           className={"form-control special-font"}
                                            style={{textTransform: "capitalize"}}
                                            onKeyPress={event => {
                                                if (event.key === "Enter") {

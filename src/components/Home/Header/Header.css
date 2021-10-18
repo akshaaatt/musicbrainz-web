@@ -1,15 +1,12 @@
 .navbar-default {
     transition: all .3s ease-in-out;
-    background-color: #FFFFFF;
+    background-color: var(--main-bg);
     padding-top: 4px;
     padding-bottom: 4px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    color: var(--color);
     box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
-}
-.navbar-ok{
-    background: #263238;
-    color: #FFFFFF;
 }
 
 .navbar-default .nav-search {
@@ -40,7 +37,7 @@
 
 .navbar-default.navbar-trans .nav-link, .navbar-default.navbar-reduce .nav-link {
     font-size: 1.1rem;
-    color: var(--white);
+    color: var(--color);
     font-weight: 600;
     letter-spacing: 0.030em;
     transition: all 0.1s ease-in-out;
@@ -133,6 +130,7 @@
     border-bottom: 0;
     transform: translate3d(0px, 40px, 0px);
     opacity: 0;
+    background-color: var(--main-bg);
     filter: alpha(opacity=0);
     visibility: hidden;
     transition: all 0.5s cubic-bezier(0.3, 0.65, 0.355, 1) 0s, opacity 0.31s ease 0s, height 0s linear 0.36s;
@@ -155,17 +153,18 @@
     padding: 12px 18px;
     transition: all 500ms ease;
     font-weight: 600;
+    color: var(--color);
     min-width: 220px;
 }
 
 .navbar-default .dropdown .dropdown-menu .dropdown-item:hover {
-    background-color: #ffffff;
+    background-color: var(--background-color);
     color: #eb743b;
     transition: all 500ms ease;
 }
 
 .navbar-default .dropdown .dropdown-menu .dropdown-item.active {
-    background-color: #ffffff;
+    background-color: var(--background-color);
     color: #eb743b;
 }
 
@@ -192,7 +191,7 @@
 
 .navbar-toggler span {
     display: block;
-    background-color: #000000;
+    background-color: var(--color);
     height: 3px;
     width: 25px;
     margin-top: 4px;

@@ -1,48 +1,29 @@
-.colors {
-     --color-primary: #f3f3f3;
-     --color-secondary: #fbfbfe;
-     --color-accent: #fd6f53;
-     --font-color: #000000;
-     --blue: #4e7ec2;
-     --indigo: #6610f2;
-     --purple: #ba478f;
-     --pink: #e83e8c;
-     --red: #c64040;
-     --orange: #eb743b;
-     --yellow: #ffcd5c;
-     --green: #68B360;
-     --teal: #20c997;
-     --cyan: #17a2b8;
-     --white: #fff;
-     --gray: #6c757d;
-     --gray-dark: #343a40;
-     --primary: #ba478f;
-     --secondary: #6c757d;
-     --success: #68B360;
-     --info: #d691bc;
-     --warning: #ffcd5c;
-     --danger: #c64040;
-     --light: #f8f9fa;
- }
-
 .theme-light {
     --box-color: white;
     --color: black;
+    --main-bg: white;
     --background-color: white;
     --primary-color: orange;
     --secondary-color: purple;
     --title-color: #213b52;
     --shadow: rgba(1, 41, 112, 0.08);
     --gray-light: #e0e0e0;
+    --intro-bg-first: purple;
+    --intro-bg-second: orange;
+    --selected-bg: #213b52;
 }
 
 .theme-dark  {
     --box-color: #243133;
+    --main-bg: #243133;
     --color: white;
     --background-color: black;
     --primary-color: purple;
     --secondary-color: orange;
     --title-color: #f3f3f3;
     --shadow: rgba(1, 21, 92, 0.18);
-    --gray-light: #e0e0e0;
+    --gray-light: #243133;
+    --intro-bg-first: #262626;
+    --intro-bg-second: #1a1a1a;
+    --selected-bg: #15DED8;
 }

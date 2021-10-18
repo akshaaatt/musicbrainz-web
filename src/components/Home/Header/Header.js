@@ -5,20 +5,18 @@ import ThemeSwitchButton from "../ThemeSwitchButton/ThemeSwitchButton";
 import SearchOverlay from "./SearchOverlay";
 
 function Header(props) {
-  let headerBg, searchBackground, typeCurrent = "Artist";
+  let theme, typeCurrent = "Artist";
   if (props.isDarkThemeActive) {
-    headerBg = "navbar navbar-default navbar-trans navbar-expand-lg fixed-top navbar-ok";
-    searchBackground = "navbar-ok";
+    theme = "theme-dark";
   }
   else {
-    headerBg = "navbar navbar-default navbar-trans navbar-expand-lg fixed-top";
-    searchBackground = "";
+    theme = "theme-light";
   }
 
   return (
       <>
       <SearchOverlay isDarkThemeActive={props.isDarkThemeActive}/>
-      <nav className={headerBg}>
+      <nav className={"navbar navbar-default navbar-trans navbar-expand-lg fixed-top " + theme}>
         <div className="container">
           <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span/>
@@ -73,7 +71,7 @@ function Header(props) {
           </div>
           <div className="d-none d-lg-block general-margins">
             <input type="search" name="query" id="searchInputHeader"
-                   className={"form-control "+ searchBackground}
+                   className={"form-control"}
                    style={{textTransform: "capitalize"}}
                    onKeyPress={event => {
                      if (event.key === "Enter") {
@@ -101,7 +99,7 @@ function Header(props) {
           </div>
 
           <div className="d-none d-lg-block general-margins">
-            <select id="typeHeader" name="type" className={"form-control "+ searchBackground}>
+            <select id="typeHeader" name="type" className={"form-control"}>
               <option>Artist</option>
               <option>Release</option>
               <option>Recording</option>
