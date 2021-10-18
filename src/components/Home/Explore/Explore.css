@@ -1,12 +1,7 @@
-
 section {
   padding: 60px 0;
   overflow: hidden;
   background: var(--background-color);
-}
-
-.section-bg {
-  background: linear-gradient(180deg, var(--shadow) 0%, var(--background-color) 100%);
 }
 
 .section-title {
@@ -70,7 +65,7 @@ section {
 }
 .services .card-body {
   z-index: 10;
-  background: var(--background-color);
+  background: var(--main-bg);
   border-top: 4px solid var(--background-color);
   padding: 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -83,21 +78,11 @@ section {
   margin-bottom: 20px;
 }
 .services .card-title a {
-  color: #213b52;
+  color: var(--secondary-color);
   transition: 0.3s;
 }
 .services .card-text {
-  color: #5e5e5e;
-}
-.services .read-more a {
-  color: #777777;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 12px;
-  transition: 0.3s;
-}
-.services .read-more a:hover {
-  color: #fdc134;
+  color: var(--color);
 }
 .services .card:hover img {
   transform: scale(1.1);

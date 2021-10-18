@@ -1,16 +1,17 @@
 body {
     font-family: 'Poppins', sans-serif;
-    color: #555555;
+    color: var(--color);
+    background: var(--main-bg);
 }
 
 a {
-    color: var(--white);
+    color: var(--color);
     text-decoration: none;
     transition: all .3s ease;
 }
 
 a:hover {
-    color: #ba478f;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
@@ -43,7 +44,11 @@ a:hover {
 
 .color-gray {
     text-decoration: none;
-    color: #808080;
+    color: var(--footer-sec-color);
+}
+
+.bg{
+    background: var(--main-bg);
 }
 
 .no-margin {
@@ -93,7 +98,7 @@ a:hover {
 
 .a {
     text-decoration: none;
-    color: #ba478f;
+    color: purple;
     font-size: 1.3rem;
 }
 
@@ -200,7 +205,7 @@ a:hover {
     position: absolute;
     width: 70px;
     height: 4px;
-    background-color: orange;
+    background-color: darkorange;
     bottom: 20px;
     left: 0;
 }
@@ -251,28 +256,28 @@ a:hover {
 
 .btn.btn-a {
     text-decoration: none;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--background-color);
+    color: var(--color);
 }
 
 .btn.btn-a:hover {
-    background-color: #ba478f;
+    background-color: var(--secondary-color);
     color: #000000;
 }
 
 .btn.btn-b {
-    background-color: #eb743b;
+    background-color: var(--primary-color);
     color: #FFFFFF;
     margin-top: 12px;
 }
 
 .btn.btn-b:hover {
-    background-color: #ba478f;
+    background-color: var(--secondary-color);
     color: #ffffff;
 }
 
 .btn.btn-b-n {
-    background-color: #eb743b;
+    background-color: var(--primary-color);
     color: #ffffff;
     border-radius: 8px;
     margin-left: 4px;
@@ -280,7 +285,7 @@ a:hover {
 }
 
 .btn.btn-b-n:hover {
-    background-color: #ba478f;
+    background-color: var(--secondary-color);
     color: #ffffff;
 }
 

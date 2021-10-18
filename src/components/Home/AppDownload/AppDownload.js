@@ -1,9 +1,15 @@
 import React from "react";
 import './AppDownload.css';
 
-function AppDownload() {
+function AppDownload(props) {
+    let theme;
+    if (props.isDarkThemeActive) {
+        theme = "theme-dark";
+    } else {
+        theme = "theme-light";
+    }
     return(
-        <section className="section cta-section">
+        <section className={"section cta-section "+theme}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-md-6 me-auto text-center text-md-start mb-5 mb-md-0">

@@ -4,12 +4,12 @@ import './Explore.css';
 function Explore(props) {
     let theme;
     if (props.isDarkThemeActive) {
-        theme = "services theme-dark";
+        theme = "theme-dark";
     } else {
-        theme = "services theme-light";
+        theme = "theme-light";
     }
     return(
-        <section id="services" className={"section-bg "+theme}>
+        <section id="services" className={"services "+theme}>
             <div className="container">
 
                 <div className="section-title">

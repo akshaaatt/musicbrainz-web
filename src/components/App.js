@@ -37,8 +37,8 @@ function App() {
                 <Facts isDarkThemeActive={dark}/>
                 <Projects isDarkThemeActive={dark}/>
                 <Explore isDarkThemeActive={dark}/>
-                <Supporters/>
-                <AppDownload/>
+                <Supporters isDarkThemeActive={dark}/>
+                <AppDownload isDarkThemeActive={dark}/>
                 <Footer isDarkThemeActive={dark} />
                 <ScrollToTop
                     icon="bi bi-caret-up-fill"

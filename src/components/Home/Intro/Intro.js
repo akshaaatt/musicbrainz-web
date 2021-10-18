@@ -193,7 +193,7 @@ class Intro extends React.Component {
                             <div className="card">
                                 <img className="card-img-top" src="assets/img/blogs.svg" alt="Blogs Logo"/>
                                     <div className="card-body">
-                                        <h5 className="card-title text-center"><span className="color-purple">Blogs</span> & <span className="color-orange">Updates</span></h5>
+                                        <h5 className="card-title text-center"><span className=" color-purple">Blogs</span> & <span className="color-orange">Updates</span></h5>
                                     </div>
                                     <ul className="list-group list-group-flush">
                                         <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/10/07/picard-2-7-beta-1/" target="_blank" className="card-link">Picard 2.7 Beta 1</a></li>

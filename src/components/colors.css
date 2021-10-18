@@ -2,15 +2,17 @@
     --box-color: white;
     --color: black;
     --main-bg: white;
-    --background-color: white;
-    --primary-color: orange;
+    --background-color: #f3f3f3;
+    --primary-color: darkorange;
     --secondary-color: purple;
     --title-color: #213b52;
     --shadow: rgba(1, 41, 112, 0.08);
     --gray-light: #e0e0e0;
     --intro-bg-first: purple;
-    --intro-bg-second: orange;
+    --intro-bg-second: darkorange;
     --selected-bg: #213b52;
+    --footer-bg: #f3f3f3;
+    --footer-sec-color: #808080;
 }
 
 .theme-dark  {
@@ -19,11 +21,13 @@
     --color: white;
     --background-color: black;
     --primary-color: purple;
-    --secondary-color: orange;
+    --secondary-color: darkorange;
     --title-color: #f3f3f3;
     --shadow: rgba(1, 21, 92, 0.18);
     --gray-light: #243133;
     --intro-bg-first: #262626;
     --intro-bg-second: #1a1a1a;
     --selected-bg: #15DED8;
+    --footer-bg: #243133;
+    --footer-sec-color: #90A4AE;
 }
