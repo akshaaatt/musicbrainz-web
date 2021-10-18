@@ -36,10 +36,8 @@ function App() {
                 <About isDarkThemeActive={dark}/>
                 <Facts isDarkThemeActive={dark}/>
                 <Projects isDarkThemeActive={dark}/>
-                <Explore/>
+                <Explore isDarkThemeActive={dark}/>
                 <Supporters/>
-                {/*<RecentlyAdded/>*/}
-                {/*<FAQs/>*/}
                 <AppDownload/>
                 <Footer isDarkThemeActive={dark} />
                 <ScrollToTop

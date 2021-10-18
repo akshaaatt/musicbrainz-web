@@ -20,7 +20,6 @@ const responsive = {
 
 class Intro extends React.Component {
 
-
     state = {
         additionalTransform: 0,
         posts: [],
@@ -193,8 +192,8 @@ class Intro extends React.Component {
                             </Carousel>
                         </div>
                         <div className={"col-lg-3 d-none d-lg-block"}>
-                            <div className={"card"}>
-                                <img className="card-img-top" src="assets/img/blogs.jpg" alt="Blogs Logo"/>
+                            <div className="card">
+                                <img className="card-img-top" src="assets/img/blogs.svg" alt="Blogs Logo"/>
                                     <div className="card-body">
                                         <h5 className="card-title text-center"><span className="color-purple">Blogs</span> & <span className="color-orange">Updates</span></h5>
                                     </div>

@@ -1,48 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
 
-.theme-light {
-  --box-color: white;
-  --color: black;
-  --background-color: white;
-  --primary-color: orange;
-  --secondary-color: purple;
-  --shadow: rgba(1, 41, 112, 0.08);
-}
-
-.theme-dark  {
-  --box-color: #243133;
-  --color: white;
-  --background-color: black;
-  --primary-color: purple;
-  --secondary-color: orange;
-  --shadow: rgba(1, 21, 92, 0.18);
-}
 .special-font {
   font-family: 'Comfortaa', sans-serif;
-  color: #ffffff;
-
+  color: var(--color);
 }
 
 .chip {
   padding: 0 12px;
-  background-color: var(--shadow);
+  background-color: var(--gray-light);
   border-radius: 100px;
   display: inline-flex;
   font-family: 'Comfortaa', sans-serif;
   margin: 4px;
-  color: var(--color);
+  color: black;
   align-items: center;
   height: 32px;
   font-size: 14px;
   cursor: pointer;
   border: none;
-}
-
-.chip .icon {
-  font-size: 16px;
-  color: rgba(0, 0, 0, .54);
-  width: 20px;
-  text-align: center;
 }
 
 .chip .icon--leadind {
@@ -54,8 +29,8 @@
 }
 
 .choiceChips .chip.chip--active {
-  color: var(--color);
-  background-color: var(--background-color);
+  color: white;
+  background-color: #243133;
 }
 
 .chips__filter .chip.chip--active .chip--check {
@@ -71,7 +46,7 @@
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  color: var(--color);
+  color: white;
 }
 .intro h2 {
   color: #f3f3f3;
@@ -85,11 +60,7 @@
   font-size: 16px;
   letter-spacing: 1px;
 }
-.intro .btn-get-started i {
-  margin-left: 5px;
-  font-size: 18px;
-  transition: 0.3s;
-}
+
 .search-margins{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -100,6 +71,7 @@
 .intro .intro-img {
   text-align: right;
 }
+
 @media (max-width: 991px) {
   .intro {
     padding: 40px 0 20px 0;

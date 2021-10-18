@@ -1,10 +1,12 @@
+
 section {
   padding: 60px 0;
   overflow: hidden;
+  background: var(--background-color);
 }
 
 .section-bg {
-  background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);
+  background: linear-gradient(180deg, var(--shadow) 0%, var(--background-color) 100%);
 }
 
 .section-title {
@@ -19,7 +21,7 @@ section {
   padding-bottom: 20px;
   position: relative;
   font-family: "Poppins", sans-serif;
-  color: #213b52;
+  color: var(--color);
 }
 .section-title h2::before {
   content: "";
@@ -27,7 +29,7 @@ section {
   display: block;
   width: 120px;
   height: 1px;
-  background: #ddd;
+  background: var(--background-color);
   bottom: 1px;
   left: calc(50% - 60px);
 }
@@ -50,6 +52,7 @@ section {
 .services .card {
   border: 0;
   padding: 0 30px;
+  margin-top: 60px;
   margin-bottom: 60px;
   position: relative;
   background: transparent;
@@ -67,8 +70,8 @@ section {
 }
 .services .card-body {
   z-index: 10;
-  background: #fff;
-  border-top: 4px solid #fff;
+  background: var(--background-color);
+  border-top: 4px solid var(--background-color);
   padding: 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   margin-top: -60px;
