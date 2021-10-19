@@ -67,3 +67,7 @@ section {
 .features .content p:last-child {
   margin-bottom: 0;
 }
+.adjust-size{
+  height: 120px;
+  margin: 0 auto;
+}

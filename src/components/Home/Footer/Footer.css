@@ -1,7 +1,6 @@
 .section-footer {
   background: var(--footer-bg);
   color: var(--color);
-  padding-top: 60px;
   padding-bottom: 20px;
 }
 

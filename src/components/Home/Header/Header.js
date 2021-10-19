@@ -23,14 +23,11 @@ function Header(props) {
             <span/>
             <span/>
           </button>
+          <img src="assets/img/meb-mini/musicbrainz.svg" className="d-none d-lg-block" height="36" alt="image"/>
           <a className="navbar-brand text-brand" href="#"><span className="color-purple">Music</span><span className="color-orange">Brainz</span></a>
 
           <div className="navbar-collapse collapse justify-content-center" id="navbarDefault">
             <ul className="navbar-nav">
-              <ThemeSwitchButton
-                  dark={props.isDarkThemeActive}
-                  changeTheme={props.switchActiveTheme}
-              />
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
                 <div className="dropdown-menu">
@@ -63,6 +60,10 @@ function Header(props) {
                   <a className="dropdown-item ">Profile</a>
                   <a className="dropdown-item ">Applications</a>
                   <a className="dropdown-item ">Subscriptions</a>
+                  <ThemeSwitchButton
+                      dark={props.isDarkThemeActive}
+                      changeTheme={props.switchActiveTheme}
+                  />
                   <a className="dropdown-item ">Logout</a>
                 </div>
               </li>
