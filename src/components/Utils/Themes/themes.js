@@ -2,16 +2,6 @@ import React from 'react';
 
 const DARK_MODE_KEY = 'dark_mode';
 
-const DARK_THEME = {
-    color: '#fff',
-    background: '#243133'
-};
-
-const LIGHT_THEME = {
-    color: '#333',
-    background: '#fff'
-};
-
 const DarkMode = {
     getSetting: function () {
         try {
@@ -26,6 +16,6 @@ const DarkMode = {
     }
 };
 
-export { DARK_THEME, LIGHT_THEME, DarkMode };
+export { DarkMode };
 
-export default React.createContext(LIGHT_THEME);
+export default React.createContext();

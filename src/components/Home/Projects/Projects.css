@@ -68,6 +68,6 @@ section {
   margin-bottom: 0;
 }
 .adjust-size{
-  height: 120px;
-  margin: 0 auto;
+  height: 100px;
+  text-align: center;
 }

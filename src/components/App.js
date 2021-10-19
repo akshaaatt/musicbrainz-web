@@ -14,11 +14,11 @@ import About from "./Home/About/About";
 import Facts from "./Home/Facts/Facts";
 import Explore from "./Home/Explore/Explore";
 import Projects from "./Home/Projects/Projects";
-import ThemeContext, { DARK_THEME, LIGHT_THEME, DarkMode } from './Utils/Themes/themes';
+import ThemeContext, { DarkMode } from './Utils/Themes/themes';
 
 function App() {
     const [ dark, setDark ] = useState(DarkMode.getSetting);
-    const theme = dark ? DARK_THEME : LIGHT_THEME;
+    const theme = dark ? "theme-dark" : "theme-light";
 
     const toggleDarkMode = useCallback(function () {
         setDark(prevState => {

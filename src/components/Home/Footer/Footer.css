@@ -1,7 +1,7 @@
 .section-footer {
   background: var(--footer-bg);
   color: var(--color);
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .section-footer ul {
