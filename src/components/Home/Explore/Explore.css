@@ -77,7 +77,7 @@ section {
   margin-bottom: 20px;
 }
 .services .card-title a {
-  color: var(--secondary-color);
+  color: var(--selected-bg);
   transition: 0.3s;
 }
 .services .card-text {

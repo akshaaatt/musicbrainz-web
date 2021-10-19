@@ -18,10 +18,10 @@
 .center-p{
   color: var(--color);
   text-align: center;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .section-line{
-  padding-top: 20px;
+  padding-top: 30px;
   border-top: 1px solid #ddd;
 }
 

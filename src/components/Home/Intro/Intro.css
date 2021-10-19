@@ -70,11 +70,19 @@
 .intro .intro-img {
   text-align: right;
 }
-
+.intro input[type="search"], textarea{
+  color: var(--color);
+  background: var(--search-bg);
+  border-color: #90A4AE;
+}
+.intro input[type="search"]::placeholder{
+  color: var(--hint-color);
+}
 .intro .card{
   background: var(--main-bg);
   color: var(--color);
 }
+
 .intro .list-group-item{
   background: var(--main-bg);
   color: var(--color);

@@ -4,14 +4,8 @@ section {
 }
 
 .section-bg {
-  background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);
-}
-.section-bg-dark {
-  background: #243133;
-  color: white;
-}
-.section-bg-dark h2{
-  color: #f3f3f3;
+  background: var(--projects-bg);
+  color: var(--color);
 }
 .section-title {
   text-align: center;

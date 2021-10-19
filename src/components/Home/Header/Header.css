@@ -16,12 +16,12 @@
 
 .navbar-default input[type="search"], textarea, .navbar-default input[type="search"]::placeholder{
     color: var(--color);
-    background: var(--main-bg);
+    background: var(--search-bg);
 }
 
 .navbar-default select, option:checked, select[multiple]:focus option:checked {
     color: var(--color);
-    background: var(--main-bg);
+    background: var(--search-bg);
 }
 
 .navbar-default.navbar-reduce {
